@@ -14,6 +14,7 @@ export const AnimateWord: TAnimateWord = ({ word }) => {
           initial={'initial'}
           animate={'animate'}
           exit={'exit'}
+          style={{ perspective: '120px', perspectiveOrigin: 'left' }}
           key={i}
           custom={i}
           className={`flex h-[56px] w-auto shrink-0 items-center justify-center 
@@ -28,9 +29,9 @@ export const AnimateWord: TAnimateWord = ({ word }) => {
 
 const letterVariant = {
   initial: (index: number) => ({
-    scaleZ: 0,
-    scaleX: 0.25,
-    scaleY: 0.35,
+    scaleZ: 0.3,
+    scaleX: 0.6,
+    scaleY: 0.6,
     y: index % 2 === 0 ? 5 : -10,
     x: index % 2 === 0 ? 10 : -5,
     rotate: index % 2 === 0 ? 4 : -4,
@@ -46,9 +47,10 @@ const letterVariant = {
     x: 0,
     transition: {
       duration: 1.65,
-      delay: 0.2 + Math.floor(Math.random() * 10) / 10,
+      delay: Math.floor((Math.random() * 3) / 5) + index * 0.15,
       type: 'ease',
-      ease: [0.22, 1, 0.78, 1.2],
+      ease: [0.76, 0, 0.36, 1.2],
+      // ease: [0.22, 1, 0.78, 1.2],
     },
   }),
   exit: (index: number) => ({
@@ -58,7 +60,8 @@ const letterVariant = {
       delay: Math.floor(Math.random() * 10) / 20,
       duration: 0.75,
       type: 'ease',
-      ease: [0.22, 1, 0.78, 1],
+      ease: [0.76, 0, 0.36, 1.2],
+      // ease: [0.22, 1, 0.78, 1],
     },
   }),
 };

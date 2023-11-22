@@ -8,13 +8,13 @@ import { PageInitialEslem } from '@/components/header/page-initial/page-initial-
 
 export const PageInitial = () => {
   const { loading } = useInitialLoading();
-  const text = ['VÜCUDUNA', 'YAKLAŞ', ''];
+  const text = ['VÜCUDUNU', 'ŞİMDİ', 'KEŞFET'];
 
   return (
     <AnimatePresence>
       {loading && (
         <PageInitialWrapper>
-          <div className={'flex w-full flex-col items-center gap-2 bg-opacity-0 px-4  '}>
+          <div className={'flex w-full flex-col items-center gap-2 bg-opacity-0 px-4'}>
             <PageInitialEslem />
             {text.map((word, index) => (
               <AnimateWord word={word} key={index + word} />

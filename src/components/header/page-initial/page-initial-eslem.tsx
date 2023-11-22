@@ -14,7 +14,7 @@ export const PageInitialEslem = () => {
           },
         }}
         exit={{ opacity: 0 }}
-        className={'text-4xl font-light smTablet:text-5xl lgTablet:text-6xl'}
+        className={'-my-12 text-4xl font-light smTablet:text-5xl lgTablet:text-6xl'}
       >
         ESLEM
       </motion.h1>

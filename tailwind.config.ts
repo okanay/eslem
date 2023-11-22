@@ -76,6 +76,9 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-noise': "url('/noise.png')",
+        hurma: "url('/unlicence-hurma.jpg')",
+        bayir: "url('/unlicence-bayir.jpg')",
+        tea: "url('/unlicence-tea.jpg')",
       },
     },
   },

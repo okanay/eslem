@@ -6,7 +6,7 @@ import { useInitialLoading } from '@/hooks/useInitialLoading';
 import { PageInitialWrapper } from '@/components/header/page-initial/page-initial-wrapper';
 import { PageInitialEslem } from '@/components/header/page-initial/page-initial-eslem';
 
-export const PageInitial = () => {
+export const PageInitialAnimation = () => {
   const { loading } = useInitialLoading();
   const text = ['VÜCUDUNU', 'ŞİMDİ', 'KEŞFET'];
 

@@ -1,7 +1,8 @@
 import SessionTerminate from '@/components/header/session-terminate';
 import { Notifications } from '@/components/header/notifications/notifications';
 import { LenisScroll } from '@/components/header/lenis-scroll';
-import { PageInitial } from '@/components/header/page-initial/page-initial';
+import { PageInitialAnimation } from '@/components/header/page-initial/page-initial';
+import { Navigation } from '@/components/header/navigation/navigation';
 
 type TProps = React.FC<{}>;
 
@@ -11,8 +12,10 @@ const MainHeader: TProps = () => {
       <SessionTerminate />
       <LenisScroll />
       <Notifications />
-      <PageInitial />
-      <header className={''}>{/*<Navigation />*/}</header>
+      <PageInitialAnimation />
+      <header className={''}>
+        <Navigation />
+      </header>
     </>
   );
 };

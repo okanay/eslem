@@ -29,16 +29,16 @@ export const AnimateWord: TAnimateWord = ({ word }) => {
 
 const letterVariant = {
   initial: (index: number) => ({
-    scaleX: 1.75,
-    scaleY: 1.75,
+    scaleX: 1.45,
+    scaleY: 1.45,
     y: index % 2 === 0 ? 4 : -4,
     x: index % 2 === 0 ? 8 : -8,
     rotate: index % 2 === 0 ? 2 : -2,
     opacity: 0,
   }),
   animate: (index: number) => ({
-    scaleX: 0.95,
-    scaleY: 0.95,
+    scaleX: 1.05,
+    scaleY: 1.05,
     rotate: 0,
     opacity: 1,
     y: 0,

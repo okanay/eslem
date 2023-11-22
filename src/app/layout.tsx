@@ -4,8 +4,8 @@ import { Providers } from '@/providers/providers';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Luxolis | Login Task',
-  description: 'Created by Okan Ay for Luxolis.',
+  title: 'Eslem | Diyetisyen',
+  description: 'Vücüduna hükmet, içindeki zerafete uzanan profesyönel klavuz.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

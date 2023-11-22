@@ -45,7 +45,7 @@ const letterVariant = {
     y: 0,
     x: 0,
     transition: {
-      duration: 1.8,
+      duration: 1.65,
       delay: 0.2 + Math.floor(Math.random() * 10) / 10,
       type: 'ease',
       ease: [0.22, 1, 0.78, 1.2],

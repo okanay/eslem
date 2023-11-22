@@ -8,7 +8,7 @@ import { PageInitialEslem } from '@/components/header/page-initial/page-initial-
 
 export const PageInitial = () => {
   const { loading } = useInitialLoading();
-  const text = ['VÜCUDUNA', 'ŞİMDİ', 'YAKLAŞ'];
+  const text = ['VÜCUDUNA', 'YAKLAŞ', ''];
 
   return (
     <AnimatePresence>

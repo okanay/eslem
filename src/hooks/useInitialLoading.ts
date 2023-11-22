@@ -10,7 +10,7 @@ export const useInitialLoading = () => {
   useEffect(() => {
     const timeId = setTimeout(() => {
       setLoading(false);
-    }, 5400);
+    }, 3500);
 
     return () => {
       clearTimeout(timeId);

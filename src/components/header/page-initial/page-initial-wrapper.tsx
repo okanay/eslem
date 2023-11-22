@@ -30,8 +30,8 @@ const mainContainerVariant = {
     backgroundColor: 'rgb(240,240,240)',
     color: 'rgb(20,20,20)',
     transition: {
-      color: { delay: 3.75, type: 'ease', ease: [0.22, 1, 0.88, 1], duration: 1 },
-      backgroundColor: { delay: 3.75, type: 'ease', ease: [0.22, 1, 0.88, 1], duration: 1.2 },
+      color: { delay: 2.5, type: 'ease', ease: [0.22, 1, 0.88, 1], duration: 1 },
+      backgroundColor: { delay: 2.5, type: 'ease', ease: [0.22, 1, 0.88, 1], duration: 1.2 },
     },
   },
   exit: {

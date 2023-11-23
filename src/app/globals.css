@@ -44,3 +44,14 @@
   --third-900: 46 ,57 ,122;
   --third-950: 32 ,37 ,75;
 }
+
+@font-face {
+  font-family: 'schnyder';
+  src: url("/fonts/schnyder.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-schnyder {
+  font-family: 'schnyder', sans-serif;
+}

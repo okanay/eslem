@@ -4,8 +4,9 @@ import { useHeroImageIndex } from '@/hooks/useHeroImageIndex';
 import { AnimatePresence, motion } from 'framer-motion';
 
 export const HeroBgImage = () => {
-  const { imageIndex } = useHeroImageIndex(7500);
   const images = [{ image: 'bg-tea' }, { image: 'bg-hurma' }, { image: 'bg-bayir' }];
+  const { imageIndex } = useHeroImageIndex(12000);
+  const activeImage = imageIndex % images.length;
 
   return (
     <>
@@ -14,9 +15,9 @@ export const HeroBgImage = () => {
           key={imageIndex}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1, type: 'spring' }}
-          className={`${images[imageIndex % images.length].image} absolute inset-0 bg-tea bg-cover bg-center`}
+          exit={{ opacity: 0, x: '-1%' }}
+          transition={{ duration: 1.4, type: 'ease', ease: [0.22, 1, 0.78, 1] }}
+          className={`${images[activeImage].image} absolute top-0 h-full w-full bg-cover bg-center`}
         />
       </AnimatePresence>
     </>

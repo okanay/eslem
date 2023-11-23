@@ -32,7 +32,7 @@ export const NavigationMobileBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={'h-[3px] w-2/3 origin-left rounded-lg bg-zinc-600'}
+        className={'h-[3px] w-[80%] origin-left rounded-lg bg-zinc-600'}
       />
       <motion.div
         variants={lineVariantThird}
@@ -51,7 +51,7 @@ export const NavigationMobileBtn = () => {
 
 const lineVariantFirst = {
   animate: (menuStatus: boolean) => ({
-    scaleX: menuStatus ? 1 : '0',
+    scaleX: menuStatus ? 1 : '1',
     y: menuStatus ? 10 : 0,
     rotate: menuStatus ? '45deg' : '0',
   }),

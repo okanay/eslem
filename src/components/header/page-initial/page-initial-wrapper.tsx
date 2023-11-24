@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { bodoniModa } from '@/libs/next-fonts/bodoni-moda';
 
 type TPageInitialWrapper = React.FC<{
   children: React.ReactNode;

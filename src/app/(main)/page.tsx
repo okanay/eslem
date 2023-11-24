@@ -13,10 +13,12 @@ export default function Home(props: TProps) {
           <Image
             src={'/images/faces.webp'}
             alt={''}
-            width={'100'}
-            height={100}
-            className={'h-full w-full'}
+            width={'1000'}
+            height={1000}
             quality={100}
+            placeholder={'blur'}
+            className={'h-full w-full'}
+            priority={true}
           />
           <div className={'absolute inset-0 block bg-zinc-800/40'}></div>
         </div>

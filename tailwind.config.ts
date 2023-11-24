@@ -28,7 +28,7 @@ const config: Config = {
         baseTablet: '760px',
         lgTablet: '980px',
         laptop: '1020px',
-        desktop: '1440px',
+        desktop: '1285px',
       },
       colors: {
         primary: {

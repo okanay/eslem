@@ -9,7 +9,7 @@ export const NavigationMobileBtn = () => {
 
   return (
     <button
-      className={'relative flex h-[56px] w-[56px] flex-col items-end justify-center gap-2'}
+      className={'relative z-[56101] flex h-[56px] w-[56px] flex-col items-end justify-center gap-2'}
       onClick={() => setMenuStatus(!menuStatus)}
     >
       <motion.div

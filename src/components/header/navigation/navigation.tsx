@@ -1,7 +1,7 @@
 import { NavigationEslem } from '@/components/header/navigation/navigation-eslem';
 import { NavigationMobileBtn } from '@/components/header/navigation/navigation-mobile-btn';
 import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
-import NavigationMenu from '@/components/header/navigation/NavigationMenu';
+import NavigationMenu from '@/components/header/navigation/navigation-menu';
 
 export const Navigation = () => {
   // const [scroll, scrollTo] = useWindowScroll();

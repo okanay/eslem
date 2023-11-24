@@ -21,7 +21,9 @@ export const NavigationMobileBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={'h-[3px] w-full rounded-lg bg-zinc-700 sm:bg-zinc-100'}
+        className={`h-[3px] w-full rounded-lg bg-zinc-700 transition-colors duration-[900ms] ${
+          menuStatus ? 'sm:bg-zinc-700' : 'sm:bg-zinc-100'
+        } `}
       />
       <motion.div
         variants={lineVariantSecond}
@@ -32,7 +34,9 @@ export const NavigationMobileBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={'h-[3px] w-[80%] origin-left rounded-lg bg-zinc-700 sm:bg-zinc-100'}
+        className={`h-[3px] w-[80%] origin-left rounded-lg bg-zinc-700 transition-colors duration-[900ms] ${
+          menuStatus ? 'sm:bg-zinc-700' : 'sm:bg-zinc-100'
+        } `}
       />
       <motion.div
         variants={lineVariantThird}
@@ -43,7 +47,9 @@ export const NavigationMobileBtn = () => {
           type: 'spring',
           stiffness: 90,
         }}
-        className={'h-[3px] w-full rounded-lg bg-zinc-700 sm:bg-zinc-100'}
+        className={`h-[3px] w-full rounded-lg bg-zinc-700 transition-colors duration-[900ms] ${
+          menuStatus ? 'sm:bg-zinc-700' : 'sm:bg-zinc-100'
+        } `}
       />
     </button>
   );

@@ -11,8 +11,8 @@ export default function Home(props: TProps) {
   const [menuStatus, setMenuStatus] = useAtom(menuStatusAtom);
 
   return (
-    <main className={'h-screen w-full bg-zinc-100 bg-noise'}>
-      <div className={'h-mobile-full relative flex w-full flex-col sm:flex-row'}>
+    <main className={'h-mobile-full w-full bg-zinc-100 bg-noise'}>
+      <div className={'relative flex h-full w-full flex-col sm:flex-row'}>
         <div className={'flex-1'} />
         <div className={'relative h-[40%] w-full p-4 sm:h-full sm:w-[50%] sm:p-0'}>
           <Image

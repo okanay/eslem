@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { playFairDisplay } from '@/libs/next-fonts/play-fair-display';
+import { playFairDisplay } from '@/libs/next-fonts/google-fonts/play-fair-display';
 
 type TAnimateWord = React.FC<{ word: string }>;
 export const AnimateWord: TAnimateWord = ({ word }) => {

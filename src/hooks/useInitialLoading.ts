@@ -15,7 +15,7 @@ export const useInitialLoading = () => {
     return () => {
       clearTimeout(timeId);
     };
-  }, []);
+  }, [setLoading]);
 
   return { loading, setLoading };
 };

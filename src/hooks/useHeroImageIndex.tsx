@@ -19,7 +19,7 @@ export const useHeroImageIndex = (timeMS: number) => {
     return () => {
       clearTimeout(timeout);
     };
-  }, [imageIndex, loading]);
+  }, [imageIndex, loading, timeMS, setImageIndex]);
 
   return { imageIndex };
 };

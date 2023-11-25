@@ -1,7 +1,7 @@
 import { Providers } from '@/providers/providers';
 import type { Metadata } from 'next';
 import './globals.css';
-import { quicksand } from '@/libs/next-fonts/quicksand';
+import { quicksand } from '@/libs/next-fonts/google-fonts/quicksand';
 
 export const metadata: Metadata = {
   title: 'Eslem | Diyetisyen',

@@ -1,4 +1,4 @@
-import { Hero } from '@/components/index/1-hero-section/hero';
+import { Hero } from '@/components/index/hero-section/hero';
 
 type TProps = {
   searchParams: {} | null;

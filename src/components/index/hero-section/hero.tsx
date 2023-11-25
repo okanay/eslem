@@ -1,5 +1,5 @@
-import { HeroUnstart } from '@/components/index/1-hero-section/hero-unstart';
-import { HeroImage } from '@/components/index/1-hero-section/hero-image';
+import { HeroUnstart } from '@/components/index/hero-section/hero-unstart';
+import { HeroImage } from '@/components/index/hero-section/hero-image';
 
 export const Hero = () => {
   return (

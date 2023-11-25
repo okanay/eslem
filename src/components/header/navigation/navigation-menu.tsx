@@ -74,8 +74,8 @@ const NavigationMenu = () => {
               initial={initial}
               animate={animate}
               exit={exit}
-              className={`h-[40px] w-full origin-bottom bg-gradient-to-t from-zinc-700 to-zinc-900 
-              sm:absolute sm:z-[56101] sm:h-[48px] sm:w-[40px] sm:rounded-[24px] sm:shadow sm:shadow-zinc-400`}
+              className={`h-[40px] w-full origin-bottom bg-gradient-to-b from-zinc-700 to-zinc-800 
+              sm:absolute sm:z-[56101] sm:h-[48px] sm:w-[40px] sm:rounded-[24px] sm:shadow sm:shadow-zinc-700`}
             ></motion.div>
           </div>
         </motion.div>

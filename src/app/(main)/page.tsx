@@ -12,23 +12,22 @@ export default function Home(props: TProps) {
 
   return (
     <main className={'h-mobile-full w-full bg-zinc-100 bg-noise'}>
-      <div className={'relative flex h-full w-full flex-col sm:flex-row'}>
+      <div className={'flex h-full w-full flex-wrap'}>
         <div className={'flex-1'} />
-        <div className={'relative h-[40%] w-full p-4 sm:h-full sm:w-[50%] sm:p-0'}>
+        <div className={'w-min-[320px] relative h-[60%] w-full p-2 sm:h-full sm:w-[50%] sm:p-0'}>
           <Image
             src={'/images/faces.webp'}
             alt={''}
             width={'1000'}
             height={1000}
             quality={100}
-            // placeholder={'blur'}
             className={'h-full w-full rounded-lg sm:rounded-none'}
             priority={true}
           />
-          <div className={'absolute inset-0 p-4 sm:p-0'}>
+          <div className={'absolute inset-0 p-2 sm:p-0'}>
             <div
               className={`h-full w-full rounded-lg transition-all duration-500 sm:rounded-none ${
-                menuStatus ? 'bg-zinc-800/[96%]' : 'bg-zinc-800/40'
+                menuStatus ? 'bg-zinc-500/[96%]' : 'bg-zinc-600/40'
               }`}
             />
           </div>

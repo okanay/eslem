@@ -15,7 +15,7 @@ export const Navigation = () => {
           <NavigationBtn type={'register'} name={'kayit'} url={'/'} />
         </div>
         <NavigationEslem />
-        <div className={'relative'}>
+        <div className={''}>
           <NavigationMenu />
           <NavigationMobileBtn />
         </div>

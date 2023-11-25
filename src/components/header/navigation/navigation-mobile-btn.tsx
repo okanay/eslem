@@ -9,7 +9,7 @@ export const NavigationMobileBtn = () => {
 
   return (
     <button
-      className={'relative z-[56101] flex h-[56px] w-[56px] flex-col items-end justify-center gap-2'}
+      className={'relative z-[56101] flex h-[56px] w-[56px] flex-col items-end justify-center gap-2 '}
       onClick={() => setMenuStatus(!menuStatus)}
     >
       <motion.div
@@ -21,9 +21,7 @@ export const NavigationMobileBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={`h-[3px] w-full rounded-lg bg-zinc-700 transition-colors duration-[900ms] ${
-          menuStatus ? 'sm:bg-zinc-700' : 'sm:bg-zinc-100'
-        } `}
+        className={`h-[3px] w-full rounded-lg bg-zinc-100 transition-colors`}
       />
       <motion.div
         variants={lineVariantSecond}
@@ -34,9 +32,7 @@ export const NavigationMobileBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={`h-[3px] w-[80%] origin-left rounded-lg bg-zinc-700 transition-colors duration-[900ms] ${
-          menuStatus ? 'sm:bg-zinc-700' : 'sm:bg-zinc-100'
-        } `}
+        className={`h-[3px] w-[80%] origin-left rounded-lg bg-zinc-100 transition-colors`}
       />
       <motion.div
         variants={lineVariantThird}
@@ -47,9 +43,7 @@ export const NavigationMobileBtn = () => {
           type: 'spring',
           stiffness: 90,
         }}
-        className={`h-[3px] w-full rounded-lg bg-zinc-700 transition-colors duration-[900ms] ${
-          menuStatus ? 'sm:bg-zinc-700' : 'sm:bg-zinc-100'
-        } `}
+        className={`h-[3px] w-full rounded-lg bg-zinc-100 transition-colors`}
       />
     </button>
   );

@@ -12,7 +12,7 @@ export const NavigationEslem = () => {
     <h1
       className={`${
         schnyder.className
-      } relative z-[56101] -my-2 flex-shrink-0 p-2 text-7xl tracking-wide transition-colors sm:-mx-6 ${
+      } relative z-[56101] flex-shrink-0 p-2 text-5xl tracking-wide transition-colors sm:-mx-6 sm:-my-2 sm:text-7xl ${
         menuStatus
           ? 'text-zinc-100 duration-100 sm:text-zinc-950'
           : 'text-zinc-950 delay-300 duration-300 sm:text-zinc-950'

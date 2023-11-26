@@ -1,8 +1,7 @@
 import { Providers } from '@/providers/providers';
 import type { Metadata } from 'next';
 import './globals.css';
-import { quicksand } from '@/libs/next-fonts/google-fonts/quicksand';
-import { inter } from '@/libs/next-fonts/archive-fonts/inter';
+import { Analytics } from '@vercel/analytics/react';
 import { roboto } from '@/libs/next-fonts/google-fonts/roboto';
 
 export const metadata: Metadata = {
@@ -15,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${roboto.className}`} style={{ WebkitTapHighlightColor: 'rgba(97, 62, 196, 0.1)' }}>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );

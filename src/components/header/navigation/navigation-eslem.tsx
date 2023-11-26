@@ -1,10 +1,22 @@
+'use client';
+
 import Link from 'next/link';
 import { schnyder } from '@/libs/next-fonts/local-fonts/schnyder/schnyder';
+import { useAtom } from 'jotai';
+import { menuStatusAtom } from '@/atoms/menu-status-atom';
 
 export const NavigationEslem = () => {
+  const [menuStatus, setMenuStatus] = useAtom(menuStatusAtom);
+
   return (
     <h1
-      className={`${schnyder.className} via-zinc-80 relative z-[56101] flex-shrink-0 bg-gradient-to-br bg-clip-text text-5xl tracking-wide text-transparent text-zinc-100 transition-colors duration-500 sm:ml-8 sm:text-5xl lg:ml-0`}
+      className={`${
+        schnyder.className
+      } relative z-[56101] -my-2 flex-shrink-0 p-2 text-7xl tracking-wide transition-colors sm:-mx-6 ${
+        menuStatus
+          ? 'text-zinc-100 duration-100 sm:text-zinc-950'
+          : 'text-zinc-950 delay-300 duration-300 sm:text-zinc-950'
+      }`}
     >
       <Link href={'/'}>ESLEM BAYIR</Link>
     </h1>

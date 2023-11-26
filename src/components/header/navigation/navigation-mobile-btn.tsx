@@ -2,7 +2,7 @@
 
 import { menuStatusAtom } from '@/atoms/menu-status-atom';
 import { motion } from 'framer-motion';
-import { useAtom } from 'jotai/index';
+import { useAtom } from 'jotai';
 
 export const NavigationMobileBtn = () => {
   const [menuStatus, setMenuStatus] = useAtom(menuStatusAtom);
@@ -20,8 +20,12 @@ export const NavigationMobileBtn = () => {
           delay: menuStatus ? 0.25 : 0,
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
+          backgroundColor: {
+            delay: 0,
+            duration: 0.25,
+          },
         }}
-        className={`h-[3px] w-full rounded-lg bg-zinc-100 transition-colors`}
+        className={`h-[4px] w-full rounded-lg`}
       />
       <motion.div
         variants={lineVariantSecond}
@@ -31,8 +35,12 @@ export const NavigationMobileBtn = () => {
           delay: menuStatus ? 0 : 0.25,
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
+          backgroundColor: {
+            delay: 0,
+            duration: 0.25,
+          },
         }}
-        className={`h-[3px] w-[80%] origin-left rounded-lg bg-zinc-100 transition-colors`}
+        className={`h-[4px] w-[80%] origin-left rounded-lg`}
       />
       <motion.div
         variants={lineVariantThird}
@@ -42,8 +50,12 @@ export const NavigationMobileBtn = () => {
           delay: 0.1,
           type: 'spring',
           stiffness: 90,
+          backgroundColor: {
+            delay: 0,
+            duration: 0.25,
+          },
         }}
-        className={`h-[3px] w-full rounded-lg bg-zinc-100 transition-colors`}
+        className={`h-[4px] w-full rounded-lg`}
       />
     </button>
   );
@@ -52,18 +64,21 @@ export const NavigationMobileBtn = () => {
 const lineVariantFirst = {
   animate: (menuStatus: boolean) => ({
     scaleX: menuStatus ? 1 : '1',
-    y: menuStatus ? 10 : 0,
+    y: menuStatus ? 12 : 0,
+    backgroundColor: menuStatus ? 'rgb(240,240,240)' : 'rgb(9 9 11)',
     rotate: menuStatus ? '45deg' : '0',
   }),
 };
 const lineVariantSecond = {
   animate: (menuStatus: boolean) => ({
+    backgroundColor: menuStatus ? 'rgb(240,240,240)' : 'rgb(9 9 11)',
     scaleX: menuStatus ? 0 : 1,
   }),
 };
 const lineVariantThird = {
   animate: (menuStatus: boolean) => ({
-    y: menuStatus ? -10 : 0,
+    y: menuStatus ? -12 : 0,
+    backgroundColor: menuStatus ? 'rgb(240,240,240)' : 'rgb(9 9 11)',
     rotate: menuStatus ? '-45deg' : '0',
   }),
 };

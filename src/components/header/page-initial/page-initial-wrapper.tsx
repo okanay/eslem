@@ -13,7 +13,7 @@ export const PageInitialWrapper: TPageInitialWrapper = ({ children }) => {
       initial={'initial'}
       animate={'animate'}
       exit={'exit'}
-      className={`absolute left-0 top-0 z-[57099] flex h-screen w-full origin-center flex-col items-center justify-center bg-zinc-800`}
+      className={`fixed left-0 top-0 z-[57099] flex h-screen w-full origin-center flex-col items-center justify-center bg-zinc-800`}
     >
       {children}
     </motion.div>

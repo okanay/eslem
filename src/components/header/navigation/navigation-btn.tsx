@@ -14,8 +14,8 @@ export const NavigationBtn: TProps = ({ name, url, type }) => {
   return (
     <Link
       href={url}
-      className={`group relative
-            flex items-center justify-center gap-1.5
+      className={`group relative -mx-2 flex
+            items-center justify-center gap-1.5
             px-[16px] py-[8px] opacity-100 transition-all duration-500 
             hover:scale-110 hover:opacity-90
             lg:px-[24px] lg:py-[12px]`}

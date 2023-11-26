@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={quicksand.className}>
+      <body className={`${quicksand.className}`} style={{ WebkitTapHighlightColor: 'rgba(97, 62, 196, 0.1)' }}>
         <Providers>{children}</Providers>
       </body>
     </html>

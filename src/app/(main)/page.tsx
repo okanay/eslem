@@ -6,8 +6,9 @@ type TProps = {
 
 export default function Home(props: TProps) {
   return (
-    <main>
+    <main className={'bg-white'}>
       <Hero />
+      <div className={'h-mobile-full w-full bg-primary-400'}></div>
     </main>
   );
 }

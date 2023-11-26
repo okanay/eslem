@@ -66,6 +66,11 @@ const config: Config = {
         faces: "url('/images/unlicence-faces.webp')",
       },
     },
+    fontFamily: {
+      'roboto-serif': ['var(--font-roboto-serif)'],
+      'play-fair-display': ['var(--font-play-fair-display)'],
+      quicksand: ['var(--font-quicksand)'],
+    },
   },
   plugins: [],
 };

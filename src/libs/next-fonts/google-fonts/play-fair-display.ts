@@ -4,4 +4,5 @@ export const playFairDisplay = Playfair_Display({
   weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-play-fair-display',
 });

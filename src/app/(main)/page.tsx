@@ -8,7 +8,7 @@ export default function Home(props: TProps) {
   return (
     <main className={'bg-white'}>
       <Hero />
-      <div className={'h-mobile-full w-full bg-primary-400'}></div>
+      <div className={'h-screen w-full bg-primary-400'}></div>
     </main>
   );
 }

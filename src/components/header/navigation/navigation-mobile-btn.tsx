@@ -25,7 +25,7 @@ export const NavigationMobileBtn = () => {
             duration: 0.25,
           },
         }}
-        className={`  h-[4px] w-full rounded-lg`}
+        className={`h-[4px] w-full rounded-lg`}
       />
       <motion.div
         variants={lineVariantSecond}
@@ -40,7 +40,7 @@ export const NavigationMobileBtn = () => {
             duration: 0.25,
           },
         }}
-        className={`h-[4px] w-[80%] origin-left rounded-lg`}
+        className={`h-[4px] w-[100%] origin-left rounded-lg`}
       />
       <motion.div
         variants={lineVariantThird}

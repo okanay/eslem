@@ -13,10 +13,10 @@ type TProps = React.FC<{
 
 const links = [
   { name: 'Anasayfa', url: '/', isActive: true },
-  { name: 'Eğitim', url: '/', isActive: false },
+  { name: 'Yolculuk', url: '/', isActive: false },
+  { name: 'Programlar', url: '/', isActive: false },
   { name: 'İletişim', url: '/', isActive: false },
-  { name: 'Fiyatlar', url: '/', isActive: false },
-  { name: 'Lokasyon', url: '/', isActive: false },
+  { name: 'Eslem', url: '/', isActive: false },
 ];
 
 export const NavigationMenuLinks: TProps = ({ isMobile, menuStatus }) => {

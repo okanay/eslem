@@ -39,8 +39,8 @@ export default NavigationMenu;
 const variants = {
   initial_desktop: {},
   animate_desktop: {
-    width: '400px',
-    height: '480px',
+    width: '420px',
+    height: '500px',
     opacity: 1,
     transition: {
       duration: 0.75,

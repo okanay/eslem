@@ -9,8 +9,12 @@ export const HeroUnStart = () => {
     <div className="flex h-full w-full justify-end p-2 sm:h-full sm:min-w-[640px] sm:max-w-[50%] sm:flex-shrink-0 sm:p-0">
       <div className={'flex h-full w-full max-w-[640px] flex-col items-center justify-center'}>
         <div className={'flex h-full w-full flex-col items-start gap-8 px-4 text-primary-950'}>
-          <div className={'font h-mobile-full flex flex-col items-start justify-center gap-3 sm:gap-6'}>
-            <div className={'flex flex-row gap-2 sm:hidden'}>
+          <div
+            className={
+              'font h-mobile-full flex max-h-[940px] flex-col items-start justify-center gap-3 lgPhone:gap-4 sm:max-h-full sm:gap-6'
+            }
+          >
+            <div className={'flex flex-row gap-4 sm:hidden'}>
               <NavigationBtn type={'panel'} name={'panel'} url={'/'} />
               <NavigationBtn type={'register'} name={'kayit'} url={'/'} />
             </div>
@@ -38,9 +42,9 @@ export const FirstStepText = () => {
           alt={'checklist-icon-svg'}
           width={125}
           height={125}
-          className={'h-[20px] w-[20px] sm:h-[24px] sm:w-[24px]'}
+          className={'basePhone::w-[24px] h-[20px] w-[20px] basePhone:h-[24px]'}
         />
-        <span className={'text-base text-zinc-800 basePhone:text-base sm:text-2xl'}>ilk adımı tamamlandın.</span>
+        <span className={'text-base text-zinc-800 basePhone:text-xl sm:text-2xl'}>İlk adımı tamamlandın.</span>
       </h1>
     </>
   );
@@ -48,8 +52,9 @@ export const FirstStepText = () => {
 export const MainHeadingText = () => {
   return (
     <>
-      <h1 className={`flex flex-col text-3xl font-bold sm:text-7xl ${playFairDisplay.className}}`}>
-        <span className={'text-5xl font-bold text-primary-600 sm:text-8xl'}>başlamak</span> <span>için buradasın.</span>
+      <h1 className={`flex flex-col text-3xl font-bold lgPhone:text-5xl sm:text-7xl ${playFairDisplay.className}}`}>
+        <span className={'text-5xl font-bold text-primary-600 lgPhone:text-7xl sm:text-8xl'}>başlamak</span>{' '}
+        <span>için buradasın.</span>
       </h1>
     </>
   );
@@ -57,7 +62,7 @@ export const MainHeadingText = () => {
 export const AltHeadingText = () => {
   return (
     <>
-      <h4 className={'max-w-[380px] text-xl font-light sm:max-w-[560px] sm:text-4xl'}>
+      <h4 className={'max-w-[380px] text-xl font-light lgPhone:text-3xl sm:max-w-[560px] sm:text-4xl'}>
         Ayrıcalıklı bir <span className={'font-bold italic text-primary-800'}>ifade</span> için güçlü bir{' '}
         <span className={'font-bold italic text-primary-700'}>irade</span> sunmaya hazırsın. Birlikte bu{' '}
         <span className={'font-bold italic text-primary-600'}>özel</span> yolculuğu tamamlayalım.
@@ -65,12 +70,13 @@ export const AltHeadingText = () => {
     </>
   );
 };
-
 export const NutritiousButton = () => {
   return (
     <>
       <button className="flex flex-row items-center justify-center gap-3 rounded-[8px] bg-primary-50 px-6 py-3 shadow shadow-primary-900 sm:px-8 sm:py-4">
-        <span className={`${roboto.className} text-lg text-primary-900 sm:text-3xl`}>Diyete Başla</span>
+        <span className={`${roboto.className} text-lg text-primary-900 lgPhone:text-2xl sm:text-3xl`}>
+          Diyete Başla
+        </span>
         <Image
           src={'/icons/fresh.svg'}
           alt={'nut'}

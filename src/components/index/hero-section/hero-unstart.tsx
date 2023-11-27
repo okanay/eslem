@@ -30,7 +30,7 @@ export const FirstStepText = () => {
     <>
       <h1
         className={
-          'flex flex-row items-center justify-center gap-3 rounded-full border-[2px] border-emerald-400 bg-zinc-50 p-2 shadow shadow-emerald-700 sm:gap-4 sm:p-4'
+          'flex flex-row items-center justify-center gap-3 rounded-full border-[2px] border-zinc-600 bg-zinc-50 p-2 shadow shadow-zinc-700 sm:gap-4 sm:p-4'
         }
       >
         <Image
@@ -45,23 +45,22 @@ export const FirstStepText = () => {
     </>
   );
 };
-
 export const MainHeadingText = () => {
   return (
     <>
       <h1 className={`flex flex-col text-3xl font-bold sm:text-7xl ${playFairDisplay.className}}`}>
-        <span className={'text-5xl text-emerald-400 sm:text-8xl'}>başlamak</span> <span>için buradasın.</span>
+        <span className={'text-5xl font-bold text-primary-600 sm:text-8xl'}>başlamak</span> <span>için buradasın.</span>
       </h1>
     </>
   );
 };
-
 export const AltHeadingText = () => {
   return (
     <>
       <h4 className={'max-w-[380px] text-xl font-light sm:max-w-[560px] sm:text-4xl'}>
-        Ayrıcalıklı bir <span className={'italic text-emerald-400'}>ifade</span> için güçlü bir irade sunmaya hazırsın.
-        Birlikte bu özel yolculuğu tamamlayalım.
+        Ayrıcalıklı bir <span className={'font-bold italic text-primary-800'}>ifade</span> için güçlü bir{' '}
+        <span className={'font-bold italic text-primary-700'}>irade</span> sunmaya hazırsın. Birlikte bu{' '}
+        <span className={'font-bold italic text-primary-600'}>özel</span> yolculuğu tamamlayalım.
       </h4>
     </>
   );

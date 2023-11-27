@@ -4,7 +4,7 @@ import { menuStatusAtom } from '@/atoms/menu-status-atom';
 import { motion } from 'framer-motion';
 import { useAtom } from 'jotai';
 
-export const NavigationMobileBtn = () => {
+export const NavigationMenuBtn = () => {
   const [menuStatus, setMenuStatus] = useAtom(menuStatusAtom);
 
   return (

@@ -6,7 +6,7 @@ import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
 
 export const HeroUnStart = () => {
   return (
-    <div className="flex h-full w-full justify-end p-2 sm:h-full sm:min-w-[640px] sm:max-w-[50%] sm:flex-shrink-0 sm:p-0">
+    <div className="mt-8 flex h-full w-full justify-end p-2 sm:h-full sm:min-w-[640px] sm:max-w-[50%] sm:flex-shrink-0 sm:p-0">
       <div className={'flex h-full w-full max-w-[640px] flex-col items-center justify-center'}>
         <div className={'flex h-full w-full flex-col items-start gap-8 px-2 text-primary-950 sm:p-4'}>
           <div

@@ -6,7 +6,7 @@ export const AnimateWord: TAnimateWord = ({ word }) => {
   return (
     <div
       className={`${playFairDisplay.className} flex w-full items-start justify-center overflow-hidden
-    text-[3.2rem] font-light basePhone:text-[4rem] lgPhone:text-[4.4rem] sm:text-[7rem] lg:text-[11rem]`}
+    text-[3.2rem] font-light smPhone:text-[4rem] lgPhone:text-[4.4rem] sm:text-[7rem] lg:text-[11rem]`}
     >
       {word.split('').map((l, i) => (
         <motion.span
@@ -18,7 +18,7 @@ export const AnimateWord: TAnimateWord = ({ word }) => {
           key={i}
           custom={i}
           className={`flex h-[56px] w-auto shrink-0 items-center justify-center 
-           font-light basePhone:h-[72px] lgPhone:h-[80px] sm:h-[112px] lg:h-[212px]`}
+           font-light smPhone:h-[80px] lgPhone:h-[80px] sm:h-[112px] lg:h-[212px]`}
         >
           {l}
         </motion.span>

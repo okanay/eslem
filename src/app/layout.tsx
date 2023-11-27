@@ -7,7 +7,6 @@ import { roboto } from '@/libs/next-fonts/google-fonts/roboto';
 export const metadata: Metadata = {
   title: 'Eslem | Diyetisyen',
   description: 'Vücüduna hükmet, içindeki zerafete uzanan profesyönel klavuz.',
-  themeColor: { color: '#ecd96f' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

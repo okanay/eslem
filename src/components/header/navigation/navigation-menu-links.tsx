@@ -22,7 +22,7 @@ const links = [
 export const NavigationMenuLinks: TProps = ({ isMobile, menuStatus }) => {
   return (
     menuStatus && (
-      <div className="relative h-full w-full overflow-hidden bg-gradient-to-b from-zinc-800 to-zinc-950 sm:rounded-[24px] sm:from-primary-900 sm:to-primary-950 sm:shadow sm:shadow-primary-900">
+      <div className="relative h-full w-full overflow-hidden bg-gradient-to-b from-zinc-900 to-zinc-950 sm:rounded-[24px] sm:from-zinc-950 sm:to-zinc-950 sm:shadow sm:shadow-zinc-900">
         <div className={'absolute inset-0'}>
           <ul className="relative flex h-screen w-full flex-col items-center justify-center basePhone:-space-y-2 sm:h-full sm:-space-y-2">
             {links.map((link, index) => (

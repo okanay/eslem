@@ -2,13 +2,18 @@ import { playFairDisplay } from '@/libs/next-fonts/google-fonts/play-fair-displa
 import Image from 'next/image';
 import { quicksand } from '@/libs/next-fonts/google-fonts/quicksand';
 import { roboto } from '@/libs/next-fonts/google-fonts/roboto';
+import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
 
 export const HeroUnStart = () => {
   return (
     <div className="flex h-full w-full justify-end p-2 sm:h-full sm:min-w-[640px] sm:max-w-[50%] sm:flex-shrink-0 sm:p-0">
       <div className={'flex h-full w-full max-w-[640px] flex-col items-center justify-center'}>
-        <div className={'flex w-full flex-col items-start gap-8 px-4 text-primary-950'}>
-          <div className={'font flex flex-col items-start justify-center gap-3 sm:gap-6'}>
+        <div className={'flex h-full w-full flex-col items-start gap-8 px-4 text-primary-950'}>
+          <div className={'font h-mobile-full flex flex-col items-start justify-center gap-3 sm:gap-6'}>
+            <div className={'flex flex-row gap-2 sm:hidden'}>
+              <NavigationBtn type={'panel'} name={'panel'} url={'/'} />
+              <NavigationBtn type={'register'} name={'kayit'} url={'/'} />
+            </div>
             <FirstStepText />
             <MainHeadingText />
             <AltHeadingText />
@@ -44,7 +49,7 @@ export const FirstStepText = () => {
 export const MainHeadingText = () => {
   return (
     <>
-      <h1 className={`flex flex-col text-3xl sm:text-7xl ${playFairDisplay.className}}`}>
+      <h1 className={`flex flex-col text-3xl font-bold sm:text-7xl ${playFairDisplay.className}}`}>
         <span className={'text-5xl text-emerald-400 sm:text-8xl'}>başlamak</span> <span>için buradasın.</span>
       </h1>
     </>
@@ -56,7 +61,7 @@ export const AltHeadingText = () => {
     <>
       <h4 className={'max-w-[380px] text-xl font-light sm:max-w-[560px] sm:text-4xl'}>
         Ayrıcalıklı bir <span className={'italic text-emerald-400'}>ifade</span> için güçlü bir irade sunmaya hazırsın.
-        Birlikte bu özel yolculuğunu tamamlayalım.
+        Birlikte bu özel yolculuğu tamamlayalım.
       </h4>
     </>
   );

@@ -21,8 +21,8 @@ export const NavigationMenuBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={`h-[4px] w-full rounded-lg  ${
-          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-50 sm:bg-zinc-800'
+        className={`h-[4px] w-full rounded-lg transition-colors duration-500 ${
+          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
         }`}
       />
       <motion.div
@@ -34,8 +34,8 @@ export const NavigationMenuBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={`h-[4px] w-[100%] origin-left rounded-lg  ${
-          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-50 sm:bg-zinc-800'
+        className={`h-[4px] w-full rounded-lg transition-colors duration-500 ${
+          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
         }`}
       />
       <motion.div
@@ -47,8 +47,8 @@ export const NavigationMenuBtn = () => {
           type: 'spring',
           stiffness: 90,
         }}
-        className={`h-[4px] w-full rounded-lg  ${
-          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-50 sm:bg-zinc-800'
+        className={`h-[4px] w-full rounded-lg transition-colors duration-500 ${
+          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
         }`}
       />
     </button>

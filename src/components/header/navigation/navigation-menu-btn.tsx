@@ -34,7 +34,7 @@ export const NavigationMenuBtn = () => {
           type: 'ease',
           ease: [0.22, 1, 0.88, 1],
         }}
-        className={`h-[3px] w-full rounded-lg transition-colors duration-500 ${
+        className={`h-[3px] w-[80%] rounded-lg object-right transition-colors duration-500 ${
           menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
         }`}
       />

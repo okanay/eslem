@@ -2,14 +2,12 @@ import { NavigationEslem } from '@/components/header/navigation/navigation-eslem
 import { NavigationMenuBtn } from '@/components/header/navigation/navigation-menu-btn';
 import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
 import NavigationMenu from '@/components/header/navigation/navigation-menu';
+import { NavigationBg } from '@/components/header/navigation/navigation-bg';
 
 export const Navigation = () => {
-  // const [scroll, scrollTo] = useWindowScroll();
-  // const desiredScroll = scroll.y > 300;
-
   return (
     <nav className={'fixed z-[56100] w-full'}>
-      <div className={'mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:py-8'}>
+      <div className={'mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:py-4'}>
         <NavigationEslem />
         <div
           className={
@@ -26,6 +24,7 @@ export const Navigation = () => {
           <NavigationMenuBtn />
         </div>
       </div>
+      <NavigationBg />
     </nav>
   );
 };

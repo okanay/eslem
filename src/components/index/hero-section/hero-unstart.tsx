@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { quicksand } from '@/libs/next-fonts/google-fonts/quicksand';
 import { roboto } from '@/libs/next-fonts/google-fonts/roboto';
 import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
+import { schnyder } from '@/libs/next-fonts/local-fonts/schnyder/schnyder';
 
 export const HeroUnStart = () => {
   return (
@@ -62,8 +63,10 @@ export const FirstStepText = () => {
 export const MainHeadingText = () => {
   return (
     <>
-      <h1 className={`flex flex-col font-bold`}>
-        <span className={'text-5xl text-primary-600 lgPhone:text-6xl sm:text-8xl'}>başlamak</span>{' '}
+      <h1 className={`flex flex-col sm:-space-y-2`}>
+        <span className={`text-5xl font-semibold -tracking-wide text-primary-600 lgPhone:text-6xl sm:text-8xl`}>
+          başlamak
+        </span>{' '}
         <span className={'text-4xl lgPhone:text-5xl sm:text-7xl'}>için hazırsın.</span>
       </h1>
     </>
@@ -71,10 +74,10 @@ export const MainHeadingText = () => {
 };
 export const AltHeadingText = () => {
   return (
-    <h4 className={'max-w-[380px] text-2xl font-light lgPhone:text-3xl sm:max-w-[560px] sm:text-4xl'}>
-      Ayrıcalıklı bir <span className={'font-bold italic text-primary-800'}>vücut</span> için güçlü bir{' '}
-      <span className={'font-bold italic text-primary-700'}>irade</span> göstermeye hazırsın. Birlikte bu{' '}
-      <span className={'font-bold italic text-primary-600'}>özel</span> yolculuğu tamamlayalım.
+    <h4 className={'max-w-[380px] text-2xl font-light tracking-wide lgPhone:text-3xl sm:max-w-[560px] sm:text-4xl'}>
+      Ayrıcalıklı bir <span className={'font-bold italic -tracking-wide text-primary-800'}>vücut</span> için güçlü bir{' '}
+      <span className={'font-bold italic -tracking-wide text-primary-700'}>irade</span> göstermeye hazırsın. Birlikte bu{' '}
+      <span className={'font-bold italic -tracking-wide text-primary-600'}>özel</span> yolculuğu tamamlayalım.
     </h4>
   );
 };

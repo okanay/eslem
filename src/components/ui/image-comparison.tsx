@@ -12,14 +12,18 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
   const [sliderPosition, setSliderPosition] = useState(startPosition);
   const [isDragging, setIsDragging] = useState(false);
 
+  const minValue = 2;
+  const maxValue = 98;
+
+  const clamp = (value: number) => Math.max(minValue, Math.min(value, maxValue));
+
   const handleMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (!isDragging) return;
 
     const rect = event.currentTarget.getBoundingClientRect();
     const x = Math.max(0, Math.min(event.clientX - rect.left, rect.width));
-    const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
-
-    setSliderPosition(percent);
+    const percent = (x / rect.width) * 100;
+    setSliderPosition(clamp(percent));
   };
   const handleTouchMoveCapture = (event: React.TouchEvent<HTMLDivElement>) => {
     if (!isDragging) return;
@@ -29,9 +33,9 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
 
     const x = Math.max(0, Math.min(touch.clientX - rect.left, rect.width));
     const percent = (x / rect.width) * 100;
-
-    setSliderPosition(Math.min(Math.max(percent, 0), 100));
+    setSliderPosition(clamp(percent));
   };
+
   const handleMouseDown = (event: any) => {
     setIsDragging(true);
   };

@@ -22,7 +22,18 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
     setSliderPosition(percent);
   };
 
-  const handleMouseDown = () => {
+  const handleTouchMoveCapture = (event: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDragging) return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    const touch = event.changedTouches[0];
+
+    const x = Math.max(0, Math.min(rect.x + touch.clientX - rect.left, rect.width));
+    const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
+
+    setSliderPosition(percent);
+  };
+
+  const handleMouseDown = (event: any) => {
     setIsDragging(true);
   };
 
@@ -35,6 +46,8 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
       <div
         className="relative m-auto h-full w-full select-none overflow-hidden"
         onMouseMove={handleMove}
+        onTouchStart={handleMouseDown}
+        onTouchMoveCapture={handleTouchMoveCapture}
         onMouseDown={handleMouseDown}
       >
         {/*<Image alt="" fill priority src={''} />*/}

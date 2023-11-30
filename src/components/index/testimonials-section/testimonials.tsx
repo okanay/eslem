@@ -1,6 +1,6 @@
 export const Testimonials = () => {
   return (
-    <section className={'-mt-[80px] w-full bg-zinc-100 bg-noise px-4 py-12 sm:-mt-0'}>
+    <section className={'-mt-[80px] w-full bg-zinc-100 bg-noise px-4 pb-20 md:-mt-0 md:pt-20'}>
       <div className="grid-rows-8 mx-auto grid max-w-6xl gap-y-8 md:mt-8 md:grid-cols-4 md:gap-x-4 md:gap-y-16">
         <div data-name="testimonial-1" className="row-start-1 h-[560px] md:col-span-2 md:col-start-1 md:row-span-4">
           <div className={'mx-auto flex h-full w-full max-w-[480px] flex-col items-center justify-center gap-12'}>

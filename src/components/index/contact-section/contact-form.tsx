@@ -5,7 +5,7 @@ export const ContactForm = () => {
       <p className={'max-w-[380px] text-base uppercase tracking-wide md:text-lg'}>
         SANA ÖZEL ÜCRETSİZ PROGRAMIN İLE DENEYİMLEMEYE BAŞLA.
       </p>
-      <form className={'flex w-full flex-col items-center justify-center gap-[16px]'}>
+      <form className={'flex w-full flex-col items-center justify-center gap-[16px] text-sm md:text-base'}>
         <input
           type="text"
           placeholder={'İsim, Soyisim'}
@@ -23,7 +23,7 @@ export const ContactForm = () => {
 
         <button
           className={
-            'h-[56px] w-full rounded-[4px] border border-zinc-950/80 bg-gradient-to-bl from-second-300 to-second-300 text-lg shadow shadow-zinc-950'
+            'h-[56px] w-full rounded-[4px] border border-zinc-950/80 bg-gradient-to-bl from-second-300 to-second-300 shadow shadow-zinc-950 basePhone:text-base md:text-lg'
           }
         >
           Her Şey Hazırsa, Formu Gönder!

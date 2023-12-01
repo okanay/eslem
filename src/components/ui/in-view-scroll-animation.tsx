@@ -1,7 +1,7 @@
 'use client';
 
-import { motion, useInView, useScroll } from 'framer-motion';
-import { useEffect, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 
 const variants = {
   initial: {
@@ -20,7 +20,7 @@ const variants = {
     opacity: 1,
     transition: {
       duration: 0.85,
-      delay: 0.15,
+      delay: 0,
       type: 'spring',
       damping: 18,
       stiffness: 180,

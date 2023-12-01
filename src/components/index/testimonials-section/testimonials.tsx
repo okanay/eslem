@@ -33,7 +33,7 @@ export const Testimonials = () => {
         >
           <div
             className={
-              'relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[24px] border-[2px] border-zinc-600 bg-zinc-50 shadow shadow-zinc-700'
+              'relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[24px] border-[1px] border-zinc-950/20 bg-zinc-50'
             }
           >
             <ImageComparison startPosition={60} />
@@ -43,11 +43,7 @@ export const Testimonials = () => {
           data-name="picture-2"
           className="row-start-4 h-[400px] md:col-span-2 md:col-start-1 md:row-span-4 md:h-[520px]"
         >
-          <div
-            className={
-              'relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[24px] border-[2px] border-zinc-600 bg-zinc-50 shadow shadow-zinc-700'
-            }
-          >
+          <div className="relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[24px] border-[1px] border-zinc-950/20 bg-zinc-50">
             <ImageComparison startPosition={40} />
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { ContactFormButton } from '@/components/index/contact-section/contact-form-button';
+
 export const ContactForm = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center gap-[20px] text-center text-second-950 md:max-w-[480px]">
@@ -20,14 +22,7 @@ export const ContactForm = () => {
             'h-[56px] w-full rounded-[4px] border border-second-950 px-4 shadow shadow-second-300 focus:outline-second-950'
           }
         />
-
-        <button
-          className={
-            'h-[56px] w-full rounded-[4px] border border-zinc-950/80 bg-gradient-to-bl from-second-300 to-second-300 shadow shadow-zinc-950 basePhone:text-base md:text-lg'
-          }
-        >
-          Her Şey Hazırsa, Formu Gönder!
-        </button>
+        <ContactFormButton />
       </form>
     </div>
   );

@@ -59,12 +59,12 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
         onMouseDown={handleMouseDown}
       >
         {/*<Image alt="" fill priority src={''} />*/}
-        <div className={'h-full w-full bg-primary-200'} />
+        <div className={'h-full w-full bg-primary-50'} />
         <div
           className="absolute left-0 right-0 top-0 m-auto h-full w-full max-w-[700px] select-none overflow-hidden"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
-          <div className={'h-full w-full bg-second-200'} />
+          <div className={'h-full w-full bg-second-50'} />
           {/*<Image fill priority alt="" src={''} />*/}
         </div>
         <div

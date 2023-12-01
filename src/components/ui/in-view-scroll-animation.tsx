@@ -5,32 +5,24 @@ import { useRef } from 'react';
 
 const variants = {
   initial: {
-    scale: 0.85,
-    y: '120%',
-    opacity: 0.15,
+    clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
   },
   hidden: {
-    scale: 0.85,
-    y: '120%',
-    opacity: 0.15,
+    opacity: 0,
+    clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
   },
   enter: {
-    scale: 1,
-    y: 0,
     opacity: 1,
+    clipPath: 'polygon(0 0, 100% 0, 100% 120%, 0 100%)',
     transition: {
-      duration: 0.85,
-      delay: 0,
-      type: 'spring',
-      damping: 18,
-      stiffness: 180,
+      duration: 0.45,
     },
   },
 };
 
 type TProps = React.FC<{ children: React.ReactNode; once?: boolean; margin?: string }>;
 
-export const InViewScrollAnimation: TProps = ({ children, margin = '-40px', once = false }) => {
+export const InViewScrollAnimation: TProps = ({ children, margin = '-20px', once = true }) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: once, margin: margin });
 

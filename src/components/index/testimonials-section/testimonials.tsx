@@ -1,4 +1,5 @@
 import { ImageComparison } from '@/components/ui/image-comparison';
+import { InViewScrollAnimation } from '@/components/ui/in-view-scroll-animation';
 
 export const Testimonials = () => {
   return (
@@ -9,7 +10,10 @@ export const Testimonials = () => {
             <div>
               <h1 className={'text-center text-4xl font-semibold italic md:text-5xl'}>
                 {`"Bedenin bu `}
-                <span className={'-tracking-wide text-third-600 underline'}>özel</span> ilgiyi hak ediyor!{`"`}
+                <InViewScrollAnimation>
+                  <span className={'-tracking-wide text-primary-600 underline'}>özel</span>
+                </InViewScrollAnimation>{' '}
+                ilgiyi hak ediyor!{`"`}
               </h1>
             </div>
             <div>
@@ -51,8 +55,11 @@ export const Testimonials = () => {
           <div className={'mx-auto flex h-full w-full flex-col items-center justify-center gap-12'}>
             <div className={'max-w-[520px]'}>
               <h1 className={'text-center text-4xl font-semibold italic md:text-5xl'}>
-                {`"Bilimse ve `}
-                <span className={'-tracking-wide text-second-600 underline'}>doğal</span> bir deneyim!{`"`}
+                {`"Bilimsel ve `}
+                <InViewScrollAnimation>
+                  <span className={'-tracking-wide text-primary-600 underline'}>doğal</span>
+                </InViewScrollAnimation>{' '}
+                programlar.{`"`}
               </h1>
             </div>
             <div className={'max-w-[480px]'}>

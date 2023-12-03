@@ -5,16 +5,12 @@ import { roboto } from '@/libs/next-fonts/google-fonts/roboto';
 import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
 import { schnyder } from '@/libs/next-fonts/local-fonts/schnyder/schnyder';
 
-export const HeroUnStart = () => {
+export const HeroContent = () => {
   return (
-    <div className="mt-8 flex h-full w-full justify-end p-2 sm:h-full sm:min-w-[640px] sm:max-w-[50%] sm:flex-shrink-0 sm:p-0">
+    <div className="flex h-full w-full justify-end sm:h-full sm:min-w-[640px] sm:max-w-[50%] sm:flex-shrink-0">
       <div className={'flex h-full w-full max-w-[640px] flex-col items-center justify-center'}>
-        <div className={'flex h-full w-full flex-col items-start gap-8 px-2 text-primary-950 sm:p-4'}>
-          <div
-            className={
-              'font h-mobile-full flex max-h-[940px] flex-col items-start justify-center gap-4 lgPhone:gap-5 sm:max-h-full sm:gap-6'
-            }
-          >
+        <div className={'flex h-full w-full flex-col items-start text-primary-950'}>
+          <div className="font h-mobile-full mt-8 flex max-h-[920px] flex-col items-start justify-center gap-4 px-4 sm:max-h-full sm:gap-8">
             <AuthButtons />
             <FirstStepText />
             <MainHeadingText />
@@ -40,24 +36,18 @@ export const AuthButtons = () => {
 };
 export const FirstStepText = () => {
   return (
-    <>
-      <h1
-        className={
-          'mb-2 flex flex-row items-center justify-center gap-3 rounded-full border-[2px] border-zinc-600 bg-zinc-50 p-2 shadow shadow-zinc-700 sm:gap-4 sm:p-4'
-        }
-      >
-        <Image
-          src={'/icons/checklist.svg'}
-          alt={'checklist-icon-svg'}
-          width={125}
-          height={125}
-          className={'basePhone::w-[24px] h-[20px] w-[20px] basePhone:h-[24px]'}
-        />
-        <span className={'text-sm text-zinc-800 smPhone:text-base basePhone:text-lg xlPhone:text-xl sm:text-2xl'}>
-          Neredeyse tamamlamak üzeresin.
-        </span>
-      </h1>
-    </>
+    <h1 className="flex flex-row items-center justify-center gap-2 rounded-full border-[2px] border-zinc-600 bg-zinc-50 px-4 py-2 shadow shadow-zinc-700 sm:p-4">
+      <Image
+        src={'/icons/checklist.svg'}
+        alt={'checklist-icon-svg'}
+        width={125}
+        height={125}
+        className={'h-[20px] w-[20px] flex-shrink-0 basePhone:h-[24px] basePhone:w-[24px]'}
+      />
+      <span className={'text-sm text-zinc-800 smPhone:text-base basePhone:text-lg xlPhone:text-xl sm:text-2xl'}>
+        Neredeyse tamamlamak üzeresin.
+      </span>
+    </h1>
   );
 };
 export const MainHeadingText = () => {
@@ -81,25 +71,9 @@ export const AltHeadingText = () => {
     </h4>
   );
 };
-export const NutritiousButton = () => {
-  return (
-    <>
-      <button className="flex flex-row items-center justify-center gap-3 rounded-[8px] border border-primary-950 bg-zinc-50 px-6 py-3 shadow shadow-primary-950 sm:px-8 sm:py-4">
-        <span className={`text-lg text-primary-950 lgPhone:text-2xl sm:text-3xl`}>Diyete Başla</span>
-        <Image
-          src={'/icons/fresh.svg'}
-          alt={'nut'}
-          width={125}
-          height={125}
-          className={'h-[28px] w-[28px] sm:h-[40px] sm:w-[40px]'}
-        />
-      </button>
-    </>
-  );
-};
 export const SocialAccount = () => {
   return (
-    <div className={'mt-4 flex flex-row items-start justify-start gap-[20px]'}>
+    <div className={'flex flex-row items-start justify-start gap-6'}>
       <Image
         src={'/icons/whatsapp.svg'}
         alt={'whatsapp-icon'}
@@ -143,5 +117,21 @@ export const SocialAccount = () => {
         className={'h-[24px] w-[24px] flex-shrink-0 sm:h-[36px] sm:w-[36px]'}
       />
     </div>
+  );
+};
+export const NutritiousButton = () => {
+  return (
+    <>
+      <button className="flex flex-row items-center justify-center gap-2 rounded-[8px] border border-primary-950 bg-zinc-50 px-6 py-3 shadow shadow-primary-950 sm:px-8 sm:py-4">
+        <span className={`text-lg text-primary-950 lgPhone:text-2xl sm:text-3xl`}>Diyete Başla</span>
+        <Image
+          src={'/icons/fresh.svg'}
+          alt={'nut'}
+          width={125}
+          height={125}
+          className={'h-[28px] w-[28px] sm:h-[40px] sm:w-[40px]'}
+        />
+      </button>
+    </>
   );
 };

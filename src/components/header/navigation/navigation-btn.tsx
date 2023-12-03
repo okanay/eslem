@@ -15,7 +15,7 @@ export const NavigationBtn: TProps = ({ name, url, type }) => {
     <Link
       href={url}
       className={`group relative flex
-            items-center justify-center gap-2 lg:gap-3`}
+            items-center justify-center gap-2`}
     >
       <Image
         src={src}

@@ -5,8 +5,8 @@ export const Testimonials = () => {
   return (
     <section className={'w-full bg-zinc-100 bg-noise pb-24 md:pb-24 md:pt-24 '}>
       <div
-        className="grid-rows-8 mx-auto grid max-w-6xl grid-flow-dense
-      grid-rows-[masonry] gap-24 px-4 md:grid-cols-4 md:gap-16"
+        className="grid-rows-8 mx-auto grid max-w-7xl grid-flow-dense items-center gap-24
+       px-4 align-middle md:grid-cols-4 md:gap-16"
       >
         <div
           data-index={1}
@@ -19,7 +19,7 @@ export const Testimonials = () => {
           >
             <div data-name={'heading'}>
               <h1
-                className="max-w-[400px] text-4xl font-semibold italic leading-8 -tracking-widest
+                className="max-w-[400px] text-4xl font-semibold italic leading-[36px] -tracking-widest
               md:text-5xl md:-tracking-wider"
               >
                 <span>&ldquo;Bedenin bu </span>
@@ -32,7 +32,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[320px] leading-6 tracking-wide md:max-w-[520px]">
+              <p className="max-w-[320px] leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae
@@ -77,7 +77,7 @@ export const Testimonials = () => {
           >
             <div data-name={'heading'}>
               <h1
-                className="max-w-[400px] text-4xl font-semibold italic leading-8 -tracking-widest
+                className="max-w-[400px] text-4xl font-semibold italic leading-[36px] -tracking-widest
               md:text-5xl md:-tracking-wider"
               >
                 <span>&ldquo;Bilimsel ve </span>
@@ -90,7 +90,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[320px] leading-6 tracking-wide md:max-w-[520px]">
+              <p className="max-w-[320px] leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae

@@ -22,7 +22,10 @@ const links = [
 export const NavigationMenuLinks: TProps = ({ isMobile, menuStatus }) => {
   return (
     menuStatus && (
-      <div className="relative h-full w-full overflow-hidden bg-gradient-to-b from-zinc-900 to-zinc-950 sm:rounded-[24px] sm:from-zinc-950 sm:to-zinc-950 sm:shadow sm:shadow-zinc-900">
+      <div
+        className="relative h-full w-full overflow-hidden bg-gradient-to-b from-zinc-900 to-zinc-950 sm:rounded-[8px]
+       sm:from-zinc-950 sm:to-zinc-950 sm:shadow sm:shadow-zinc-900"
+      >
         <div className={'absolute inset-0'}>
           <ul className="relative flex h-screen w-full flex-col items-center justify-center basePhone:-space-y-2 sm:h-full sm:-space-y-2">
             {links.map((link, index) => (
@@ -49,7 +52,9 @@ export const NavigationMenuLinks: TProps = ({ isMobile, menuStatus }) => {
                   }}
                   transition={{
                     duration: 0.5,
-                    delay: !isMobile ? 0.35 + index * 0.1 : 0.05 + index * 0.125,
+                    delay: !isMobile
+                      ? 0.35 + index * 0.1
+                      : 0.05 + index * 0.125,
                     type: 'ease',
                     ease: [0.22, 1, 0.78, 1],
                     opacity: {

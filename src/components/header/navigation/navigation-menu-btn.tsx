@@ -2,15 +2,26 @@
 
 import { menuStatusAtom } from '@/atoms/menu-status-atom';
 import { motion } from 'framer-motion';
-import { useAtom } from 'jotai';
+import { lenisScrollControlAtom } from '@/atoms/lenis-scroll-control-atom';
+import { useAtom, useAtomValue } from 'jotai';
 
 export const NavigationMenuBtn = () => {
   const [menuStatus, setMenuStatus] = useAtom(menuStatusAtom);
+  const scrollControl = useAtomValue(lenisScrollControlAtom);
+
+  const handleOnClick = () => {
+    setMenuStatus(!menuStatus);
+
+    if (!menuStatus) scrollControl?.stop();
+    else scrollControl?.start();
+  };
 
   return (
     <button
-      className={'relative z-[56101] flex h-[56px] w-[56px] flex-col items-end justify-center gap-2 '}
-      onClick={() => setMenuStatus(!menuStatus)}
+      className={
+        'relative z-[56101] flex h-[56px] w-[56px] flex-col items-end justify-center gap-2 transition-all duration-300 hover:scale-90'
+      }
+      onClick={handleOnClick}
     >
       <motion.div
         variants={lineVariantFirst}
@@ -22,7 +33,9 @@ export const NavigationMenuBtn = () => {
           ease: [0.22, 1, 0.88, 1],
         }}
         className={`h-[3px] w-full rounded-lg transition-colors duration-500 ${
-          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
+          menuStatus
+            ? 'bg-zinc-50 sm:bg-zinc-50'
+            : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
         }`}
       />
       <motion.div
@@ -35,7 +48,9 @@ export const NavigationMenuBtn = () => {
           ease: [0.22, 1, 0.88, 1],
         }}
         className={`h-[3px] w-[80%] rounded-lg object-right transition-colors duration-500 ${
-          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
+          menuStatus
+            ? 'bg-zinc-50 sm:bg-zinc-50'
+            : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
         }`}
       />
       <motion.div
@@ -48,7 +63,9 @@ export const NavigationMenuBtn = () => {
           stiffness: 90,
         }}
         className={`h-[3px] w-full rounded-lg transition-colors duration-500 ${
-          menuStatus ? 'bg-zinc-50 sm:bg-zinc-50' : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
+          menuStatus
+            ? 'bg-zinc-50 sm:bg-zinc-50'
+            : 'bg-zinc-800 delay-300 sm:bg-zinc-800'
         }`}
       />
     </button>

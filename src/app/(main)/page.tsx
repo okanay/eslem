@@ -8,7 +8,7 @@ type TProps = {
 
 export default function Home(props: TProps) {
   return (
-    <main className={''}>
+    <main>
       <Hero />
       <Testimonials />
       <Contact />

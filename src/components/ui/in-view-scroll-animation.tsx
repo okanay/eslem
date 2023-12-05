@@ -20,15 +20,30 @@ const variants = {
   },
 };
 
-type TProps = React.FC<{ children: React.ReactNode; once?: boolean; margin?: string }>;
+type TProps = React.FC<{
+  children: React.ReactNode;
+  once?: boolean;
+  margin?: string;
+}>;
 
-export const InViewScrollAnimation: TProps = ({ children, margin = '-20px', once = true }) => {
+export const InViewScrollAnimation: TProps = ({
+  children,
+  margin = '-20px',
+  once = true,
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: once, margin: margin });
 
   return (
-    <div className={'relative inline-flex justify-end overflow-hidden py-2'} ref={ref}>
-      <motion.div variants={variants} initial={'initial'} animate={isInView ? 'enter' : 'hidden'}>
+    <div
+      className={'relative inline-flex justify-end overflow-hidden'}
+      ref={ref}
+    >
+      <motion.div
+        variants={variants}
+        initial={'initial'}
+        animate={isInView ? 'enter' : 'hidden'}
+      >
         {children}
       </motion.div>
     </div>

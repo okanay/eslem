@@ -32,30 +32,42 @@
   --third-900: 94 ,55 ,120;
   --third-950: 49 ,28 ,61;
 
-  /*red-damask*/
-  --theme-50: 252 ,245 ,240;
-  --theme-100: 248 ,231 ,220;
-  --theme-200: 240 ,205 ,184;
-  --theme-300: 230 ,170 ,139;
-  --theme-400: 219 ,128 ,92;
-  --theme-500: 213 ,107 ,72;
-  --theme-600: 196 ,76 ,50;
-  --theme-700: 163 ,59 ,43;
-  --theme-800: 131 ,49 ,41;
-  --theme-900: 106 ,43 ,36;
-  --theme-950: 57 ,20 ,17;
+  /*--spring-green*/
+  --theme-50: 239 ,254 ,246;
+  --theme-100: 217 ,255 ,235;
+  --theme-200: 181 ,253 ,215;
+  --theme-300: 124 ,249 ,184;
+  --theme-400: 83 ,238 ,158;
+  --theme-500: 19 ,212 ,113;
+  --theme-600: 9 ,176 ,91;
+  --theme-700: 11 ,138 ,73;
+  --theme-800: 15 ,108 ,61;
+  --theme-900: 14 ,89 ,53;
+  --theme-950: 1 ,50 ,27;
+}
 
-  /*--theme-50: 251 ,251 ,235;*/
-  /*--theme-100: 246 ,245 ,203;*/
-  /*--theme-200: 238 ,235 ,154;*/
-  /*--theme-300: 227 ,216 ,90;*/
-  /*--theme-400: 219 ,198 ,52;*/
-  /*--theme-500: 203 ,176 ,39;*/
-  /*--theme-600: 175 ,139 ,31;*/
-  /*--theme-700: 140 ,103 ,28;*/
-  /*--theme-800: 117 ,83 ,30;*/
-  /*--theme-900: 100 ,69 ,31;*/
-  /*--theme-950: 58 ,36 ,14;*/
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.initial-lenis {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 .h-mobile-full {

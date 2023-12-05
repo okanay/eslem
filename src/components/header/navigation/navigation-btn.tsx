@@ -8,14 +8,15 @@ type TProps = React.FC<{
 }>;
 
 export const NavigationBtn: TProps = ({ name, url, type }) => {
-  const src = type === 'register' ? '/icons/register.svg' : '/icons/profile.svg';
+  const src =
+    type === 'register' ? '/icons/register.svg' : '/icons/profile.svg';
   const alt = type === 'register' ? 'register-icon-svg' : 'profile-icon-svg';
 
   return (
     <Link
       href={url}
       className={`group relative flex
-            items-center justify-center gap-2`}
+            items-center justify-center gap-2 transition-all duration-300 hover:scale-90`}
     >
       <Image
         src={src}
@@ -24,7 +25,9 @@ export const NavigationBtn: TProps = ({ name, url, type }) => {
         width={128}
         height={128}
       />
-      <span className={'text-[18px] uppercase text-zinc-800 lg:text-[22px]'}>{name}</span>
+      <span className={'text-[18px] uppercase text-zinc-800 lg:text-[22px]'}>
+        {name}
+      </span>
     </Link>
   );
 };

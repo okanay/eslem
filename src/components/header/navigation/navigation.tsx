@@ -7,11 +7,13 @@ import { NavigationBg } from '@/components/header/navigation/navigation-bg';
 export const Navigation = () => {
   return (
     <nav className={'fixed z-[56100] w-full'}>
-      <div className={'mx-auto flex max-w-7xl items-center justify-between p-4'}>
+      <div
+        className={'mx-auto flex max-w-7xl items-center justify-between p-4'}
+      >
         <NavigationEslem />
         <div
           className={
-            'sm:flex sm:items-center sm:justify-center sm:gap-8 sm:rounded-full sm:bg-zinc-100 sm:px-6 sm:py-2'
+            'sm:flex sm:items-center sm:justify-center sm:gap-8 sm:rounded-[8px] sm:bg-zinc-100 sm:px-6 sm:py-2'
           }
         >
           <div className={'hidden sm:block'}>

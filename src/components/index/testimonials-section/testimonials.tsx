@@ -19,12 +19,12 @@ export const Testimonials = () => {
           >
             <div data-name={'heading'}>
               <h1
-                className="max-w-[400px] text-4xl font-semibold italic leading-[36px] -tracking-widest
-              md:text-5xl md:-tracking-wider"
+                className="max-w-[360px] text-4xl font-semibold italic -tracking-widest md:max-w-[440px] md:text-[3.25rem]
+              md:leading-[64px] md:-tracking-wider"
               >
                 <span>&ldquo;Bedenin bu </span>
                 <InViewScrollAnimation>
-                  <span className={'-tracking-wide text-primary-600 underline'}>
+                  <span className={'px-0.5 text-primary-600 underline'}>
                     özel
                   </span>
                 </InViewScrollAnimation>
@@ -53,7 +53,10 @@ export const Testimonials = () => {
           data-name="picture-1"
           className="row-start-2 h-[400px] md:col-span-2 md:col-start-3 md:row-span-4 md:h-[520px]"
         >
-          <div className="relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[24px] border-[1px] border-zinc-950/20 bg-zinc-50">
+          <div
+            className="relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[8px]
+           border-[1px] border-zinc-950/20 bg-zinc-50"
+          >
             <ImageComparison startPosition={60} />
           </div>
         </div>
@@ -62,7 +65,10 @@ export const Testimonials = () => {
           data-name="picture-2"
           className="row-start-4 h-[400px] md:col-span-2 md:col-start-1 md:row-span-4 md:h-[520px]"
         >
-          <div className="relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[24px] border-[1px] border-zinc-950/20 bg-zinc-50">
+          <div
+            className="relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[8px]
+           border-[1px] border-zinc-950/20 bg-zinc-50"
+          >
             <ImageComparison startPosition={40} />
           </div>
         </div>
@@ -77,12 +83,12 @@ export const Testimonials = () => {
           >
             <div data-name={'heading'}>
               <h1
-                className="max-w-[400px] text-4xl font-semibold italic leading-[36px] -tracking-widest
-              md:text-5xl md:-tracking-wider"
+                className="max-w-[360px] text-4xl font-semibold italic -tracking-widest md:max-w-[440px] md:text-[3.25rem]
+              md:leading-[64px] md:-tracking-wider"
               >
                 <span>&ldquo;Bilimsel ve </span>
                 <InViewScrollAnimation>
-                  <span className={'-tracking-wide text-primary-600 underline'}>
+                  <span className={'px-0.5 text-primary-600 underline'}>
                     doğal{' '}
                   </span>
                 </InViewScrollAnimation>

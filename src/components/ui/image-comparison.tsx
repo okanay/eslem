@@ -15,7 +15,8 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
   const minValue = 2;
   const maxValue = 98;
 
-  const clamp = (value: number) => Math.max(minValue, Math.min(value, maxValue));
+  const clamp = (value: number) =>
+    Math.max(minValue, Math.min(value, maxValue));
 
   const handleMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (!isDragging) return;
@@ -48,7 +49,7 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
       style={{
         touchAction: 'none',
       }}
-      className="relative h-full w-full"
+      className="group relative h-full w-full cursor-ew-resize"
       onMouseUp={handleMouseUp}
     >
       <div
@@ -68,12 +69,13 @@ export const ImageComparison: TProps = ({ startPosition = 50, images }) => {
           {/*<Image fill priority alt="" src={''} />*/}
         </div>
         <div
-          className="absolute bottom-0 top-0 w-[5px] cursor-ew-resize bg-zinc-50"
+          className="absolute bottom-0 top-0 w-[5px] cursor-ew-resize bg-zinc-50
+          transition-colors duration-500 group-hover:bg-primary-500"
           style={{
             left: `calc(${sliderPosition}% - 1px)`,
           }}
         >
-          <div className="absolute -left-1 top-[calc(50%-5px)] h-3 w-3 rounded-full bg-zinc-50" />
+          <div className="absolute -left-1 top-[calc(50%-5px)] h-3 w-3 rounded-full bg-zinc-50 transition-all duration-500 group-hover:scale-125 group-hover:bg-primary-600" />
         </div>
       </div>
     </div>

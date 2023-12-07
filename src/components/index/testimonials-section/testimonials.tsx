@@ -54,8 +54,8 @@ export const Testimonials = () => {
           className="row-start-2 h-[400px] md:col-span-2 md:col-start-3 md:row-span-4 md:h-[520px]"
         >
           <div
-            className="relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[8px]
-           border-[1px] border-zinc-950/20 bg-zinc-50"
+            className="glass relative mx-auto h-full w-full max-w-[400px] overflow-hidden
+           rounded-[8px] border border-zinc-950/[5%]"
           >
             <ImageComparison startPosition={60} />
           </div>
@@ -66,8 +66,8 @@ export const Testimonials = () => {
           className="row-start-4 h-[400px] md:col-span-2 md:col-start-1 md:row-span-4 md:h-[520px]"
         >
           <div
-            className="relative mx-auto h-full w-full max-w-[400px] overflow-hidden rounded-[8px]
-           border-[1px] border-zinc-950/20 bg-zinc-50"
+            className="glass relative mx-auto h-full w-full max-w-[400px] overflow-hidden
+           rounded-[8px] border border-zinc-950/[5%]"
           >
             <ImageComparison startPosition={40} />
           </div>

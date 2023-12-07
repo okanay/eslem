@@ -4,8 +4,8 @@ export const ContactImage = () => {
   return (
     <>
       <div
-        className="hidden h-[440px] w-[320px] flex-shrink-0 rounded-[8px] border-[0.5px]
-      border-zinc-800 bg-primary-50/10 md:block lg:w-[360px]"
+        className="glass hidden h-[440px] w-[320px] flex-shrink-0 rounded-[8px] border border-zinc-950/[5%]
+      md:block lg:w-[360px]"
       >
         <Image
           src={'./illustration/information.svg'}

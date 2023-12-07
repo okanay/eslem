@@ -107,7 +107,7 @@ export const SocialAccount = () => {
         width={125}
         height={125}
         className={
-          'h-[24px] w-[24px] flex-shrink-0 transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
+          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
       />
       <Image
@@ -116,7 +116,7 @@ export const SocialAccount = () => {
         width={125}
         height={125}
         className={
-          'h-[24px] w-[24px] flex-shrink-0 transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px] '
+          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
       />
       <Image
@@ -125,7 +125,7 @@ export const SocialAccount = () => {
         width={125}
         height={125}
         className={
-          'h-[24px] w-[24px] flex-shrink-0 transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px] '
+          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
       />
       <Image
@@ -134,7 +134,7 @@ export const SocialAccount = () => {
         width={125}
         height={125}
         className={
-          'h-[24px] w-[24px] flex-shrink-0 transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px] '
+          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
       />
       <Image
@@ -143,7 +143,7 @@ export const SocialAccount = () => {
         width={125}
         height={125}
         className={
-          'h-[24px] w-[24px] flex-shrink-0 transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px] '
+          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
       />
       <Image
@@ -152,7 +152,7 @@ export const SocialAccount = () => {
         width={125}
         height={125}
         className={
-          'h-[24px] w-[24px] flex-shrink-0 transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px] '
+          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
       />
     </div>
@@ -161,10 +161,10 @@ export const SocialAccount = () => {
 export const NutritiousButton = () => {
   return (
     <button
-      className="flex flex-row items-center justify-center gap-2 rounded-[8px] border border-primary-950
-      bg-zinc-50 px-6 py-3 shadow shadow-primary-950 transition-all duration-300 hover:scale-[96%] sm:px-8 sm:py-4"
+      className="flex flex-row items-center justify-center gap-2 rounded-[8px] border-2 border-zinc-100
+      bg-zinc-800 px-6 py-3 shadow shadow-zinc-950 transition-all duration-300 hover:scale-[96%] sm:px-8 sm:py-4"
     >
-      <span className={`text-lg text-primary-950 lgPhone:text-2xl sm:text-3xl`}>
+      <span className={`text-lg text-zinc-50 lgPhone:text-2xl sm:text-3xl`}>
         Diyete Başla
       </span>
       <Image

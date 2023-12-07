@@ -3,12 +3,12 @@
 export const ContactFormButton = () => {
   return (
     <button
-      type={'button'}
-      className={
-        'h-[56px] w-full rounded-[4px] border border-zinc-950 bg-zinc-950 text-sm text-zinc-50 shadow shadow-zinc-100 transition-all duration-500 hover:scale-[98%] smPhone:text-base basePhone:text-lg md:text-xl'
-      }
+      className="flex h-[64px] w-full flex-row items-center justify-center gap-2 rounded-[8px]
+      border-2 border-zinc-100 bg-zinc-800 shadow shadow-zinc-950 transition-all duration-300 hover:scale-[96%] sm:px-8 sm:py-4"
     >
-      Her Şey Hazırsa, Formu Gönder!
+      <span className={`text-base text-zinc-50 lgPhone:text-2xl sm:text-lg`}>
+        Her Şey Hazırsa, Formu Gönder!
+      </span>
     </button>
   );
 };

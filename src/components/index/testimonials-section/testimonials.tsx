@@ -3,7 +3,11 @@ import { InViewScrollAnimation } from '@/components/ui/in-view-scroll-animation'
 
 export const Testimonials = () => {
   return (
-    <section className={'w-full bg-zinc-100 bg-noise pb-24 md:pb-24 md:pt-24 '}>
+    <div
+      className={
+        '-mt-[10vh] w-full bg-zinc-100 bg-noise pb-24 md:pb-24 md:pt-24'
+      }
+    >
       <div
         className="grid-rows-8 mx-auto grid max-w-7xl grid-flow-dense items-center gap-24
        px-4 align-middle md:grid-cols-4 md:gap-16"
@@ -51,11 +55,11 @@ export const Testimonials = () => {
         <div
           data-index={2}
           data-name="picture-1"
-          className="row-start-2 h-[400px] md:col-span-2 md:col-start-3 md:row-span-4 md:h-[520px]"
+          className="row-start-2 h-[480px] md:col-span-2 md:col-start-3 md:row-span-4 md:h-[520px]"
         >
           <div
-            className="glass relative mx-auto h-full w-full max-w-[400px] overflow-hidden
-           rounded-[8px] border border-zinc-950/[5%]"
+            className="glass relative mx-auto h-full w-full max-w-[400px]
+           overflow-hidden rounded-[8px] shadow-md shadow-zinc-950"
           >
             <ImageComparison startPosition={60} />
           </div>
@@ -63,11 +67,11 @@ export const Testimonials = () => {
         <div
           data-index={3}
           data-name="picture-2"
-          className="row-start-4 h-[400px] md:col-span-2 md:col-start-1 md:row-span-4 md:h-[520px]"
+          className="row-start-4 h-[480px] md:col-span-2 md:col-start-1 md:row-span-4 md:h-[520px]"
         >
           <div
-            className="glass relative mx-auto h-full w-full max-w-[400px] overflow-hidden
-           rounded-[8px] border border-zinc-950/[5%]"
+            className="glass relative mx-auto h-full w-full max-w-[400px]
+           overflow-hidden rounded-[8px] shadow-md shadow-zinc-950"
           >
             <ImageComparison startPosition={40} />
           </div>
@@ -113,6 +117,6 @@ export const Testimonials = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

@@ -1,13 +1,10 @@
 import { ImageComparison } from '@/components/ui/image-comparison';
 import { InViewScrollAnimation } from '@/components/ui/in-view-scroll-animation';
+import Image from 'next/image';
 
 export const Testimonials = () => {
   return (
-    <div
-      className={
-        '-mt-[10vh] w-full bg-zinc-100 bg-noise pb-24 md:pb-24 md:pt-24'
-      }
-    >
+    <div className="-mt-[10vh] w-full bg-zinc-100 bg-noise pb-24 pt-10 md:pb-24 md:pt-24">
       <div
         className="grid-rows-8 mx-auto grid max-w-7xl grid-flow-dense items-center gap-24
        px-4 align-middle md:grid-cols-4 md:gap-16"
@@ -21,6 +18,13 @@ export const Testimonials = () => {
             className="mx-auto flex h-full w-full flex-col items-center justify-center
           gap-8 text-center text-base md:gap-12 md:text-lg"
           >
+            <Image
+              src={'icons/comma.svg'}
+              alt={'comma-icon-svg'}
+              width={500}
+              height={500}
+              className={'-my-6 h-[40px] w-[40px]'}
+            />
             <div data-name={'heading'}>
               <h1
                 className="max-w-[360px] text-4xl font-semibold italic -tracking-widest md:max-w-[440px] md:text-[3.25rem]
@@ -47,7 +51,7 @@ export const Testimonials = () => {
               <p
                 className={'text-center font-semibold leading-6 tracking-wide'}
               >
-                - OKAN A.
+                - Adipisci Dignissimos
               </p>
             </div>
           </div>
@@ -85,6 +89,13 @@ export const Testimonials = () => {
             className="mx-auto flex h-full w-full flex-col items-center justify-center gap-8 text-center text-base
           md:gap-12 md:text-lg"
           >
+            <Image
+              src={'icons/comma.svg'}
+              alt={'comma-icon-svg'}
+              width={500}
+              height={500}
+              className={'-my-6 h-[40px] w-[40px]'}
+            />
             <div data-name={'heading'}>
               <h1
                 className="max-w-[360px] text-4xl font-semibold italic -tracking-widest md:max-w-[440px] md:text-[3.25rem]
@@ -111,7 +122,7 @@ export const Testimonials = () => {
               <p
                 className={'text-center font-semibold leading-6 tracking-wide'}
               >
-                - OKAN A.
+                - Alias Corporis
               </p>
             </div>
           </div>

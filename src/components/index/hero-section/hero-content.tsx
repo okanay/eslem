@@ -1,9 +1,5 @@
-import { playFairDisplay } from '@/libs/next-fonts/google-fonts/play-fair-display';
 import Image from 'next/image';
-import { quicksand } from '@/libs/next-fonts/google-fonts/quicksand';
-import { roboto } from '@/libs/next-fonts/google-fonts/roboto';
 import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
-import { schnyder } from '@/libs/next-fonts/local-fonts/schnyder/schnyder';
 
 export const HeroContent = () => {
   return (
@@ -77,13 +73,9 @@ export const MainHeadingText = () => {
 };
 export const AltHeadingText = () => {
   return (
-    <h4
-      className={
-        'max-w-[380px] text-2xl font-light tracking-wide lgPhone:text-3xl sm:max-w-[560px] sm:text-4xl'
-      }
-    >
+    <h4 className="max-w-[380px] text-2xl font-light tracking-wide lgPhone:text-3xl sm:max-w-[560px] sm:text-4xl">
       Ayrıcalıklı bir{' '}
-      <span className={'font-bold italic -tracking-wide text-primary-800'}>
+      <span className="font-bold italic -tracking-wide text-primary-800">
         vücut
       </span>{' '}
       için güçlü bir{' '}

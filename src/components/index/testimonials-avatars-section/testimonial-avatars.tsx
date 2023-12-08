@@ -1,9 +1,9 @@
 'use client';
 
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
-export const WhatWeDo = () => {
+export const TestimonialAvatars = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -11,7 +11,7 @@ export const WhatWeDo = () => {
     offset: ['start end', 'end end'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 0.5, 1], ['0%', '0%', '-100%']);
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (

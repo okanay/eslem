@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <section
       className={
-        'mx-auto flex w-full flex-col justify-center border border-zinc-950/10 bg-zinc-200 bg-noise py-12'
+        'mx-auto flex w-full flex-col justify-center border border-zinc-100 bg-primary-200 py-12 shadow-md shadow-zinc-300/40'
       }
     >
       <div

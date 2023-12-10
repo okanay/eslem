@@ -1,6 +1,6 @@
 'use client';
 import { useFormStatus } from 'react-dom';
-import { FingerPrintIcon } from '@heroicons/react/24/outline';
+// import { FingerPrintIcon } from '@heroicons/react/24/outline';
 
 export const LoginButton: React.FC<{}> = props => {
   const { pending, data, method, action } = useFormStatus();

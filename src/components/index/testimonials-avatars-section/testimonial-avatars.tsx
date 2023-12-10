@@ -11,14 +11,14 @@ export const TestimonialAvatars = () => {
     offset: ['start end', 'end end'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-75%']);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
     <motion.div
       ref={ref}
       style={{ y, opacity }}
-      className="relative z-20 h-[10vh] w-full border border-zinc-100 bg-primary-200 shadow-md shadow-zinc-300/40"
+      className="relative z-20 h-[10vh] w-full border border-zinc-100 bg-zinc-50 shadow-md shadow-zinc-300/40"
     >
       <div className={'mx-auto h-full max-w-7xl px-4'}>
         <div className="flex h-full w-full flex-col items-center justify-center sm:items-start">

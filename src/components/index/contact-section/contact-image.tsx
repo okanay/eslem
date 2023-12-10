@@ -4,7 +4,7 @@ export const ContactImage = () => {
   return (
     <>
       <div
-        className="glass hidden h-[440px] w-[320px] flex-shrink-0 rounded-[8px] border border-zinc-950/[5%]
+        className="hidden h-[440px] w-[320px] flex-shrink-0 rounded-[8px] border border-zinc-950/[5%] bg-zinc-100
       md:block lg:w-[360px]"
       >
         <Image

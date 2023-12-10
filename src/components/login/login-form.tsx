@@ -1,7 +1,7 @@
 'use client';
 
 import { notificationAtom } from '@/atoms/notification-atom';
-import { EnvelopeIcon, LockClosedIcon } from '@heroicons/react/24/outline';
+// import { EnvelopeIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 
 import { useForm } from 'react-hook-form';
 import { LoginButton } from '@/components/login/login-button';
@@ -28,7 +28,11 @@ export const LoginForm = () => {
     clearError();
 
     const { email, password } = getValues();
-    const response = await signIn('credentials', { email, password, redirect: false });
+    const response = await signIn('credentials', {
+      email,
+      password,
+      redirect: false,
+    });
 
     if (response?.ok) handleLoginSuccess(response);
     else handleLoginFail(response);
@@ -62,9 +66,11 @@ export const LoginForm = () => {
         />
         <div
           data-name={'email-heroicon-container'}
-          className={'pointer-events-none absolute left-0 top-0 flex h-12 w-full items-center justify-start px-4'}
+          className={
+            'pointer-events-none absolute left-0 top-0 flex h-12 w-full items-center justify-start px-4'
+          }
         >
-          <EnvelopeIcon className={'h-[24px] w-[24px] text-zinc-50'} />
+          {/*<EnvelopeIcon className={'h-[24px] w-[24px] text-zinc-50'} />*/}
         </div>
       </div>
       <LoginInputError
@@ -73,7 +79,10 @@ export const LoginForm = () => {
         name={'email-error-container'}
       />
 
-      <div data-name={'password-container'} className={'relative h-full w-full'}>
+      <div
+        data-name={'password-container'}
+        className={'relative h-full w-full'}
+      >
         <input
           {...register('password')}
           name={'password'}
@@ -83,9 +92,11 @@ export const LoginForm = () => {
         />
         <div
           data-name={'password-heroicon-container'}
-          className={'pointer-events-none absolute left-0 top-0 flex h-full w-full items-center justify-start px-4'}
+          className={
+            'pointer-events-none absolute left-0 top-0 flex h-full w-full items-center justify-start px-4'
+          }
         >
-          <LockClosedIcon className={'h-[24px] w-[24px] text-zinc-50'} />
+          {/*<LockClosedIcon className={'h-[24px] w-[24px] text-zinc-50'} />*/}
         </div>
       </div>
       <LoginInputError
@@ -94,7 +105,10 @@ export const LoginForm = () => {
         name={'password-error-container'}
       />
 
-      <div data-name={'form-buttons-container'} className={'mt-8 flex flex-col items-end gap-4'}>
+      <div
+        data-name={'form-buttons-container'}
+        className={'mt-8 flex flex-col items-end gap-4'}
+      >
         <LoginButton />
         <button type={'button'} className={'text-lg text-zinc-50'}>
           Forgot Password?

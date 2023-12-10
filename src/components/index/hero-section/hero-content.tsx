@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
+import Image from 'next/image';
 
 export const HeroContent = () => {
   return (
@@ -98,6 +98,8 @@ export const SocialAccount = () => {
         alt={'whatsapp-icon'}
         width={125}
         height={125}
+        sizes={'125'}
+        loading={'eager'}
         className={
           'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
@@ -107,6 +109,8 @@ export const SocialAccount = () => {
         alt={'instagram-icon'}
         width={125}
         height={125}
+        sizes={'125'}
+        loading={'eager'}
         className={
           'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
@@ -116,6 +120,8 @@ export const SocialAccount = () => {
         alt={'linkedin-icon'}
         width={125}
         height={125}
+        sizes={'125'}
+        loading={'eager'}
         className={
           'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
@@ -125,6 +131,8 @@ export const SocialAccount = () => {
         alt={'linkedin-icon'}
         width={125}
         height={125}
+        sizes={'125'}
+        loading={'eager'}
         className={
           'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
@@ -134,6 +142,8 @@ export const SocialAccount = () => {
         alt={'facebook-icon'}
         width={125}
         height={125}
+        sizes={'125'}
+        loading={'eager'}
         className={
           'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }
@@ -143,6 +153,8 @@ export const SocialAccount = () => {
         alt={'telegram-icon'}
         width={125}
         height={125}
+        sizes={'125'}
+        loading={'eager'}
         className={
           'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
         }

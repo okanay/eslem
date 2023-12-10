@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const Testimonials = () => {
   return (
-    <div className="-mt-[10vh] w-full bg-zinc-100 bg-noise pb-24 pt-10 md:pb-24 md:pt-24">
+    <div className="w-full bg-zinc-100 bg-noise pb-24 pt-10 md:pb-24 md:pt-24">
       <div
         className="grid-rows-8 mx-auto grid max-w-7xl grid-flow-dense items-center gap-24
        px-4 align-middle md:grid-cols-4 md:gap-16"

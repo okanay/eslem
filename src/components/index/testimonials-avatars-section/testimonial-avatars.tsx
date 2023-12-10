@@ -11,8 +11,8 @@ export const TestimonialAvatars = () => {
     offset: ['start end', 'end end'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-75%']);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const y = useTransform(scrollYProgress, [0, 1], ['-100%', '0%']);
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
 
   return (
     <motion.div
@@ -29,7 +29,7 @@ export const TestimonialAvatars = () => {
               <div className="h-10 w-10 rounded-full border-2 border-white bg-primary-300 basePhone:h-12 basePhone:w-12 sm:h-16 sm:w-16" />
               <div className="h-10 w-10 rounded-full border-2 border-white bg-violet-200 basePhone:h-12 basePhone:w-12 sm:h-16 sm:w-16" />
             </div>
-            <h1 className="text-center text-sm font-bold tracking-wider text-zinc-800 basePhone:text-base sm:text-2xl">
+            <h1 className="max-w-[160px] text-center text-sm leading-[22px] tracking-wider text-zinc-800 basePhone:text-base lgPhone:max-w-full sm:text-2xl">
               Daha önce mutlu olmuş yüzler.
             </h1>
           </div>

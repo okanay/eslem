@@ -9,15 +9,15 @@ export const HeroImage = () => {
       }
     >
       <div className={'relative h-full w-full rounded-[24px] sm:rounded-none'}>
-        <Image
-          src={'/images/faces.webp'}
-          alt={''}
-          width={'1000'}
-          height={1000}
-          quality={100}
-          priority={true}
-          className={'h-full w-full rounded-lg object-cover sm:rounded-none'}
-        />
+        {/*<Image*/}
+        {/*  src={'/images/faces.webp'}*/}
+        {/*  alt={''}*/}
+        {/*  width={'1000'}*/}
+        {/*  height={1000}*/}
+        {/*  quality={100}*/}
+        {/*  priority={true}*/}
+        {/*  className={'h-full w-full rounded-lg object-cover sm:rounded-none'}*/}
+        {/*/>*/}
         <div className={'absolute inset-0 sm:p-0'}>
           <HeroImageBlur />
         </div>

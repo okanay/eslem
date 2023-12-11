@@ -1,5 +1,6 @@
 import { ImageComparison } from '@/components/ui/image-comparison';
 import { InViewScrollAnimation } from '@/components/ui/in-view-scroll-animation';
+import comma from '../../../../public/icons/svgs/comma.svg';
 import Image from 'next/image';
 
 export const Testimonials = () => {
@@ -19,10 +20,9 @@ export const Testimonials = () => {
           gap-8 text-center text-base md:gap-12 md:text-lg"
           >
             <Image
-              src={'icons/comma.svg'}
+              src={comma}
               alt={'comma-icon-svg'}
-              width={500}
-              height={500}
+              priority={true}
               className={'-my-6 h-[40px] w-[40px]'}
             />
             <div data-name={'heading'}>
@@ -90,7 +90,7 @@ export const Testimonials = () => {
           md:gap-12 md:text-lg"
           >
             <Image
-              src={'icons/comma.svg'}
+              src={comma}
               alt={'comma-icon-svg'}
               width={500}
               height={500}

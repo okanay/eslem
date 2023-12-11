@@ -1,3 +1,6 @@
+import registerIcon from '../../../../public/icons/webps/register.webp';
+import panelIcon from '../../../../public/icons/webps/panel.webp';
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,8 +11,7 @@ type TProps = React.FC<{
 }>;
 
 export const NavigationBtn: TProps = ({ name, url, type }) => {
-  const src =
-    type === 'register' ? '/icons/register.svg' : '/icons/profile.svg';
+  const src = type === 'register' ? registerIcon : panelIcon;
   const alt = type === 'register' ? 'register-icon-svg' : 'profile-icon-svg';
 
   return (
@@ -21,9 +23,8 @@ export const NavigationBtn: TProps = ({ name, url, type }) => {
       <Image
         src={src}
         alt={alt}
+        placeholder={'blur'}
         className={'h-[22px] w-[22px] text-zinc-800 lg:h-[24px] lg:w-[24px]'}
-        width={128}
-        height={128}
       />
       <span className={'text-[18px] uppercase text-zinc-800 lg:text-[22px]'}>
         {name}

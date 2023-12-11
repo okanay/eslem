@@ -6,7 +6,7 @@ export const NavigationBg = () => {
   const [show, setShow] = useState(false);
   const { scrollYProgress } = useScroll();
   scrollYProgress.on('change', latestValue => {
-    return setShow(latestValue > 0.05);
+    return setShow(latestValue > 0.02);
   });
 
   return (

@@ -46,11 +46,11 @@ const config: Config = {
         } as any,
       },
       backgroundImage: {
-        noise: "url('/images/noise.png')",
+        noise: "url('/images/noise.webp')",
         hurma: "url('/images/unlicence-hurma.jpg')",
         bayir: "url('/images/unlicence-bayir.jpg')",
         tea: "url('/images/unlicence-tea.jpg')",
-        faces: "url('/images/unlicence-faces.webp')",
+        faces: "url('/images/faces.webp')",
       },
     },
   },

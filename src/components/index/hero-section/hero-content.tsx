@@ -1,5 +1,7 @@
 import { NavigationBtn } from '@/components/header/navigation/navigation-btn';
-import Image from 'next/image';
+import { SocialAccounts } from '@/components/index/hero-section/social-accounts';
+import { FirstStepText } from '@/components/index/hero-section/first-step-text';
+import { NutritiousButton } from '@/components/index/hero-section/nutritious-button';
 
 export const HeroContent = () => {
   return (
@@ -11,7 +13,7 @@ export const HeroContent = () => {
             <FirstStepText />
             <MainHeadingText />
             <AltHeadingText />
-            <SocialAccount />
+            <SocialAccounts />
             <NutritiousButton />
           </div>
         </div>
@@ -28,31 +30,6 @@ export const AuthButtons = () => {
         <NavigationBtn type={'register'} name={'kayit'} url={'/'} />
       </div>
     </>
-  );
-};
-export const FirstStepText = () => {
-  return (
-    <h1
-      className="flex flex-row items-center justify-center gap-2 rounded-[8px]
-    border-[2px] border-zinc-600 bg-zinc-50 px-4 py-2 shadow shadow-zinc-700 sm:p-4"
-    >
-      <Image
-        src={'/icons/checklist.svg'}
-        alt={'checklist-icon-svg'}
-        width={125}
-        height={125}
-        className={
-          'h-[20px] w-[20px] flex-shrink-0 basePhone:h-[24px] basePhone:w-[24px]'
-        }
-      />
-      <span
-        className={
-          'text-sm text-zinc-800 smPhone:text-base basePhone:text-lg xlPhone:text-xl sm:text-2xl'
-        }
-      >
-        Neredeyse tamamlamak üzeresin.
-      </span>
-    </h1>
   );
 };
 export const MainHeadingText = () => {
@@ -88,96 +65,5 @@ export const AltHeadingText = () => {
       </span>{' '}
       yolculuğu tamamlayalım.
     </h4>
-  );
-};
-export const SocialAccount = () => {
-  return (
-    <div className={'flex flex-row items-start justify-start gap-6'}>
-      <Image
-        src={'/icons/whatsapp.svg'}
-        alt={'whatsapp-icon'}
-        width={125}
-        height={125}
-        sizes={'125'}
-        loading={'eager'}
-        className={
-          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
-        }
-      />
-      <Image
-        src={'/icons/instagram.svg'}
-        alt={'instagram-icon'}
-        width={125}
-        height={125}
-        sizes={'125'}
-        loading={'eager'}
-        className={
-          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
-        }
-      />
-      <Image
-        src={'/icons/linkedin.svg'}
-        alt={'linkedin-icon'}
-        width={125}
-        height={125}
-        sizes={'125'}
-        loading={'eager'}
-        className={
-          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
-        }
-      />
-      <Image
-        src={'/icons/twitter.svg'}
-        alt={'linkedin-icon'}
-        width={125}
-        height={125}
-        sizes={'125'}
-        loading={'eager'}
-        className={
-          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
-        }
-      />
-      <Image
-        src={'/icons/facebook.svg'}
-        alt={'facebook-icon'}
-        width={125}
-        height={125}
-        sizes={'125'}
-        loading={'eager'}
-        className={
-          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
-        }
-      />
-      <Image
-        src={'/icons/telegram.svg'}
-        alt={'telegram-icon'}
-        width={125}
-        height={125}
-        sizes={'125'}
-        loading={'eager'}
-        className={
-          'h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]'
-        }
-      />
-    </div>
-  );
-};
-export const NutritiousButton = () => {
-  return (
-    <button
-      className="flex flex-row items-center justify-center gap-2 rounded-[8px] border-2 border-zinc-100
-      bg-zinc-800 px-6 py-3 shadow shadow-zinc-950 transition-all duration-300 hover:scale-[96%] sm:px-8 sm:py-4"
-    >
-      <span className={`text-lg text-zinc-50 lgPhone:text-2xl sm:text-3xl`}>
-        Diyete Başla
-      </span>
-      <Image
-        src={'/icons/fresh.svg'}
-        alt={'nut'}
-        width={125}
-        height={125}
-        className={'h-[28px] w-[28px] sm:h-[40px] sm:w-[40px]'}
-      />
-    </button>
   );
 };

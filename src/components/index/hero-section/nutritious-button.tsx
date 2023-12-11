@@ -13,6 +13,7 @@ export const NutritiousButton = () => {
       <Image
         src={fresh}
         alt={'fresh-icon'}
+        priority={true}
         className={'h-[28px] w-[28px] sm:h-[40px] sm:w-[40px]'}
       />
     </button>

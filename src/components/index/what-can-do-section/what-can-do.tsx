@@ -20,7 +20,7 @@ const data = [
 
 export const WhatCanDo: React.FC<{}> = props => {
   return (
-    <section className="h-full w-full bg-gradient-to-tl from-primary-200 to-primary-100 py-20 md:py-28">
+    <section className="h-full w-full bg-gradient-to-tl from-primary-100 to-primary-50 py-20 md:py-28">
       <div className="mx-auto flex h-full w-full max-w-7xl flex-col gap-8">
         <div className="flex h-full w-full flex-col items-start justify-start gap-2 px-6 text-start">
           <h2 className="text-lg font-light tracking-wide text-primary-950 md:text-xl">
@@ -46,11 +46,7 @@ export const WhatCanDo: React.FC<{}> = props => {
                 <h2 className={'text-lg font-bold tracking-wide md:text-xl'}>
                   {item.header}
                 </h2>
-                <p
-                  className={
-                    'text-sm font-light leading-[28px] md:text-base md:leading-[28px]'
-                  }
-                >
+                <p className="text-sm font-light leading-[28px] md:text-base md:leading-[28px]">
                   {item.text}
                 </p>
               </div>

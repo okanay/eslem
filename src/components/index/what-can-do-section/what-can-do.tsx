@@ -21,13 +21,13 @@ const data = [
 export const WhatCanDo: React.FC<{}> = props => {
   return (
     <section className="h-full w-full bg-gradient-to-br from-zinc-50 to-primary-50 py-20">
-      <div className="mx-auto flex h-full w-full max-w-7xl flex-col gap-8">
-        <div className="flex h-full w-full flex-col items-start justify-start gap-[4px] px-6 text-start text-zinc-700">
+      <div className="mx-auto flex h-full w-full max-w-7xl flex-col gap-16">
+        <div className="flex h-full w-full flex-col items-center justify-start gap-[4px] px-6 text-center text-zinc-700">
           <h2 className="text-sm font-light smPhone:text-base md:text-base">
             Temel Hizmetler.
           </h2>
-          <h1 className="max-w-[320px] text-2xl font-bold leading-[36px] tracking-wide smPhone:text-3xl md:max-w-[480px] md:text-4xl md:leading-[44px]">
-            Danışabileceğiniz Uzmanlık Alanları.
+          <h1 className="max-w-[480px] text-2xl font-bold leading-[36px] tracking-wide smPhone:text-3xl md:text-4xl md:leading-[44px]">
+            Profesyonel Diyetisyenlik Hizmetleri.
           </h1>
         </div>
         <div className="flex h-full w-full flex-col items-center justify-center gap-x-[40px] gap-y-[20px] px-4 lg:flex-row">

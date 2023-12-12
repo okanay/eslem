@@ -26,10 +26,7 @@ export const Testimonials = () => {
               className={'-my-4 h-[40px] w-[40px] md:-my-8'}
             />
             <div data-name={'heading'}>
-              <h1
-                className="max-w-[360px] text-4xl font-semibold italic leading-[40px]
-              -tracking-wide"
-              >
+              <h1 className="text-2xl font-bold italic leading-[36px] -tracking-wide smPhone:text-3xl md:max-w-[360px] md:text-4xl md:leading-[44px]">
                 <span>&ldquo;Bedenin bu </span>
                 <InViewScrollAnimation>
                   <span className={'px-0.5 text-primary-600 underline'}>
@@ -40,7 +37,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[320px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
+              <p className="max-w-[300px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae
@@ -97,10 +94,7 @@ export const Testimonials = () => {
               className={'-my-4 h-[40px] w-[40px] md:-my-8'}
             />
             <div data-name={'heading'}>
-              <h1
-                className="max-w-[360px] text-4xl font-semibold italic leading-[40px]
-              -tracking-wide"
-              >
+              <h1 className="text-2xl font-bold italic leading-[36px] -tracking-wide smPhone:text-3xl md:max-w-[360px] md:text-4xl md:leading-[44px]">
                 <span>&ldquo;Bilimsel ve </span>
                 <InViewScrollAnimation>
                   <span className={'px-0.5 text-primary-600 underline'}>
@@ -111,7 +105,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[320px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
+              <p className="max-w-[300px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae

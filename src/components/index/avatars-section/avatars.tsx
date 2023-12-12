@@ -18,7 +18,7 @@ export const Avatars = () => {
     <m.div
       ref={ref}
       style={{ y, opacity }}
-      className="relative z-20 h-[10vh] w-full border border-zinc-100 bg-zinc-50"
+      className="relative z-20 hidden h-[10vh] w-full border border-zinc-100 bg-zinc-50 sm:block"
     >
       <div className={'mx-auto h-full max-w-7xl px-4'}>
         <div className="flex h-full w-full flex-col items-center justify-center sm:items-start">

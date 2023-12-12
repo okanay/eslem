@@ -11,7 +11,8 @@ export const HeroImage = () => {
           alt={'multiple-faces-images-gif'}
           quality={100}
           placeholder={'blur'}
-          loading={'lazy'}
+          loading={'eager'}
+          priority={false}
           className={'h-full w-full rounded-lg object-cover sm:rounded-none'}
         />
         <div className={'absolute inset-0 sm:p-0'}>

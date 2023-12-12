@@ -14,36 +14,42 @@ export const SocialAccounts = () => {
         src={whatsapp}
         alt={'whatsapp-icon'}
         placeholder={'blur'}
+        loading={'eager'}
         className="h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]"
       />
       <Image
         src={instagram}
         alt={'instagram-icon'}
         placeholder={'blur'}
+        loading={'eager'}
         className="h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]"
       />
       <Image
         src={linkedin}
         alt={'linkedin-icon'}
         placeholder={'blur'}
+        loading={'eager'}
         className="h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]"
       />
       <Image
         src={twitter}
         alt={'twitter-icon'}
         placeholder={'blur'}
+        loading={'eager'}
         className="h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]"
       />
       <Image
         src={facebook}
         alt={'facebook-icon'}
         placeholder={'blur'}
+        loading={'eager'}
         className="h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]"
       />
       <Image
         src={telegram}
         alt={'telegram-icon'}
         placeholder={'blur'}
+        loading={'eager'}
         className="h-[24px] w-[24px] flex-shrink-0 cursor-pointer transition-all duration-300 hover:scale-90 sm:h-[36px] sm:w-[36px]"
       />
     </div>

@@ -24,6 +24,7 @@ export const NavigationBtn: TProps = ({ name, url, type }) => {
         src={src}
         alt={alt}
         placeholder={'blur'}
+        loading={'eager'}
         className={'h-[22px] w-[22px] text-zinc-800 lg:h-[24px] lg:w-[24px]'}
       />
       <span className={'text-lg uppercase text-zinc-800 lg:text-xl'}>

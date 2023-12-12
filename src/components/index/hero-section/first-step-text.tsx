@@ -11,6 +11,7 @@ export const FirstStepText = () => {
         src={checklist}
         alt={'checklist-icon-svg'}
         placeholder={'blur'}
+        loading={'eager'}
         className="h-[20px] w-[20px] flex-shrink-0 basePhone:h-[24px] basePhone:w-[24px]"
       />
       <span className="text-sm text-zinc-800 smPhone:text-base basePhone:text-lg xlPhone:text-xl sm:text-2xl">

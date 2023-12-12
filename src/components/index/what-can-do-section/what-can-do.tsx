@@ -20,13 +20,13 @@ const data = [
 
 export const WhatCanDo: React.FC<{}> = props => {
   return (
-    <section className="h-full w-full bg-gradient-to-tl from-primary-100 to-primary-50 py-20 md:py-28">
+    <section className="h-full w-full bg-gradient-to-br from-zinc-50 to-primary-50 py-20">
       <div className="mx-auto flex h-full w-full max-w-7xl flex-col gap-8">
-        <div className="flex h-full w-full flex-col items-start justify-start gap-2 px-6 text-start">
-          <h2 className="text-lg font-light tracking-wide text-primary-950 md:text-xl">
+        <div className="flex h-full w-full flex-col items-start justify-start gap-[4px] px-6 text-start text-zinc-700">
+          <h2 className="text-sm font-light smPhone:text-base md:text-base">
             Temel Hizmetler.
           </h2>
-          <h1 className="text-3xl leading-[40px] -tracking-wide text-primary-950 md:text-4xl">
+          <h1 className="max-w-[320px] text-2xl font-bold leading-[36px] tracking-wide smPhone:text-3xl md:max-w-[480px] md:text-4xl md:leading-[44px]">
             Danışabileceğiniz Uzmanlık Alanları.
           </h1>
         </div>
@@ -34,7 +34,7 @@ export const WhatCanDo: React.FC<{}> = props => {
           {data.map((item, index) => (
             <div
               key={'what-can-do' + index}
-              className="h-[400px] w-full rounded-[8px] bg-gradient-to-tl from-zinc-100 to-zinc-50 shadow shadow-zinc-700/20 md:h-[440px]"
+              className="h-[400px] w-full rounded-[8px] bg-gradient-to-tl from-zinc-50 via-zinc-100 to-zinc-50 shadow-sm shadow-zinc-800/20 md:h-[440px]"
             >
               <div className="flex h-full w-full flex-col items-start justify-start gap-6 px-8 pt-8 font-light text-zinc-900">
                 <Image

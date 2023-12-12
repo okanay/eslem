@@ -26,7 +26,7 @@ export const NavigationBtn: TProps = ({ name, url, type }) => {
         placeholder={'blur'}
         className={'h-[22px] w-[22px] text-zinc-800 lg:h-[24px] lg:w-[24px]'}
       />
-      <span className={'text-[18px] uppercase text-zinc-800 lg:text-[22px]'}>
+      <span className={'text-lg uppercase text-zinc-800 lg:text-xl'}>
         {name}
       </span>
     </Link>

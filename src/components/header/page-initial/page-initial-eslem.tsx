@@ -1,11 +1,11 @@
 'use client';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { schnyder } from '@/libs/next-fonts/local-fonts/schnyder/schnyder';
 
 export const PageInitialEslem = () => {
   return (
     <>
-      <motion.h1
+      <m.h1
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,
@@ -18,7 +18,7 @@ export const PageInitialEslem = () => {
         className={`${schnyder.className} -my-4 text-4xl font-light sm:text-6xl lg:-my-12 lg:text-7xl`}
       >
         ESLEM
-      </motion.h1>
+      </m.h1>
     </>
   );
 };

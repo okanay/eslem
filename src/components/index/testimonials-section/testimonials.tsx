@@ -23,12 +23,12 @@ export const Testimonials = () => {
               src={comma}
               alt={'comma-icon-svg'}
               priority={true}
-              className={'-my-6 h-[40px] w-[40px]'}
+              className={'-my-4 h-[40px] w-[40px] md:-my-8'}
             />
             <div data-name={'heading'}>
               <h1
-                className="max-w-[360px] text-4xl font-semibold italic -tracking-widest md:max-w-[440px] md:text-[3.25rem]
-              md:leading-[64px] md:-tracking-wider"
+                className="max-w-[360px] text-4xl font-semibold italic leading-[40px]
+              -tracking-wide"
               >
                 <span>&ldquo;Bedenin bu </span>
                 <InViewScrollAnimation>
@@ -40,7 +40,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[320px] leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
+              <p className="max-w-[320px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae
@@ -94,12 +94,12 @@ export const Testimonials = () => {
               alt={'comma-icon-svg'}
               width={500}
               height={500}
-              className={'-my-6 h-[40px] w-[40px]'}
+              className={'-my-4 h-[40px] w-[40px] md:-my-8'}
             />
             <div data-name={'heading'}>
               <h1
-                className="max-w-[360px] text-4xl font-semibold italic -tracking-widest md:max-w-[440px] md:text-[3.25rem]
-              md:leading-[64px] md:-tracking-wider"
+                className="max-w-[360px] text-4xl font-semibold italic leading-[40px]
+              -tracking-wide"
               >
                 <span>&ldquo;Bilimsel ve </span>
                 <InViewScrollAnimation>
@@ -111,7 +111,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[320px] leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
+              <p className="max-w-[320px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae
@@ -120,7 +120,9 @@ export const Testimonials = () => {
             </div>
             <div data-name={'name'}>
               <p
-                className={'text-center font-semibold leading-6 tracking-wide'}
+                className={
+                  'text-center text-lg font-semibold leading-6 tracking-wide'
+                }
               >
                 - Alias Corporis
               </p>

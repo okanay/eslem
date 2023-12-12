@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
+import { m, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const variants = {
@@ -39,13 +39,13 @@ export const InViewScrollAnimation: TProps = ({
       className={'relative inline-flex justify-end overflow-hidden'}
       ref={ref}
     >
-      <motion.div
+      <m.div
         variants={variants}
         initial={'initial'}
         animate={isInView ? 'enter' : 'hidden'}
       >
         {children}
-      </motion.div>
+      </m.div>
     </div>
   );
 };

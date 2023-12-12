@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 type TPageInitialWrapper = React.FC<{
   children: React.ReactNode;
@@ -8,7 +8,7 @@ type TPageInitialWrapper = React.FC<{
 
 export const PageInitialWrapper: TPageInitialWrapper = ({ children }) => {
   return (
-    <motion.div
+    <m.div
       variants={mainContainerVariant}
       initial={'initial'}
       animate={'animate'}
@@ -16,7 +16,7 @@ export const PageInitialWrapper: TPageInitialWrapper = ({ children }) => {
       className={`fixed left-0 top-0 z-[57099] flex h-screen w-full origin-center flex-col items-center justify-center bg-zinc-800`}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 };
 
@@ -29,8 +29,18 @@ const mainContainerVariant = {
     backgroundColor: 'rgb(240,240,240)',
     color: 'rgb(20,20,20)',
     transition: {
-      color: { delay: 2.5, type: 'ease', ease: [0.22, 1, 0.88, 1], duration: 1 },
-      backgroundColor: { delay: 2.5, type: 'ease', ease: [0.22, 1, 0.88, 1], duration: 1.2 },
+      color: {
+        delay: 2.5,
+        type: 'ease',
+        ease: [0.22, 1, 0.88, 1],
+        duration: 1,
+      },
+      backgroundColor: {
+        delay: 2.5,
+        type: 'ease',
+        ease: [0.22, 1, 0.88, 1],
+        duration: 1.2,
+      },
     },
   },
   exit: {

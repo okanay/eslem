@@ -28,7 +28,7 @@ export const WhatCanDo: React.FC<{}> = props => {
           <h2 className="text-sm font-light smPhone:text-base md:text-base">
             Temel Hizmetler.
           </h2>
-          <h1 className="max-w-[480px] text-2xl font-bold leading-[36px] tracking-wide smPhone:text-3xl md:text-4xl md:leading-[44px]">
+          <h1 className="max-w-[480px] text-2xl font-bold leading-[36px] tracking-wide smPhone:text-3xl md:text-5xl md:leading-[52px]">
             Profesyonel Diyetisyenlik Hizmetleri.
           </h1>
         </div>

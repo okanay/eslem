@@ -11,7 +11,7 @@ export const Avatars = () => {
     offset: ['start end', 'end end'],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ['-100%', '0%']);
+  const y = useTransform(scrollYProgress, [0, 1], ['-50%', '0%']);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
 
   return (

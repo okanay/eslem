@@ -15,8 +15,8 @@ export default function Home(props: TProps) {
       <Hero />
       <WhatCanDo />
       <InstagramBlog />
-      <Testimonials />
       <Avatars />
+      <Testimonials />
       <Contact />
     </main>
   );

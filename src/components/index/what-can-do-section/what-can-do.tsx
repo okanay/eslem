@@ -2,6 +2,7 @@ import Image from 'next/image';
 import nutrition from '../../../../public/icons/svgs/nutrition.svg';
 import health from '../../../../public/icons/svgs/health.svg';
 import circle from '../../../../public/icons/svgs/circle.svg';
+import { TextDelayAnimation } from '@/components/ui/text-delay-animation';
 const data = [
   {
     image: { src: nutrition, alt: '' },

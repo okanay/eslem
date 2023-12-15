@@ -8,7 +8,7 @@ export const HeroContent = () => {
     <div className="flex h-full w-full justify-end sm:h-full sm:min-w-[640px] sm:max-w-[50%] sm:flex-shrink-0">
       <div className="flex h-full w-full max-w-[640px] flex-col items-center justify-center">
         <div className="flex h-full w-full flex-col items-start text-primary-950">
-          <div className="h-mobile-full mt-8 flex max-h-[920px] flex-col items-start justify-center gap-4 px-4 sm:mt-0 sm:max-h-full sm:gap-8">
+          <div className="h-mobile-full mt-8 flex max-h-[920px] min-h-[667px] flex-col items-start justify-center gap-4 px-4 sm:mt-0 sm:max-h-full sm:min-h-0 sm:gap-8">
             <AuthButtons />
             <FirstStepText />
             <MainHeadingText />

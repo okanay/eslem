@@ -1,7 +1,6 @@
 'use client';
 
 import { notificationAtom } from '@/atoms/notification-atom';
-// import { EnvelopeIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 
 import { useForm } from 'react-hook-form';
 import { LoginButton } from '@/components/login/login-button';

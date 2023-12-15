@@ -8,12 +8,12 @@ export const InstagramBlog = () => {
           Sosyal Medya.
         </h2>
         <h1 className="max-w-[480px] text-2xl font-bold leading-[36px] tracking-wide smPhone:text-3xl md:text-5xl md:leading-[52px]">
-          Blog Paylaşımları.
+          Instagram Paylaşımları.
         </h1>
       </div>
       <div
         data-name={'slider'}
-        className="relative mx-auto h-full max-w-[3000px] overflow-x-hidden"
+        className="relative mx-auto -mt-12 h-full max-w-[3000px] overflow-x-hidden overflow-y-visible py-12"
       >
         <div
           data-name={'slider-inner'}
@@ -44,7 +44,7 @@ export const InstagramCard = ({ index }: { index: number }) => {
   return (
     <div
       className={
-        'group h-[400px] w-[328px] flex-shrink-0 cursor-pointer px-2 transition-all duration-500 hover:translate-y-[-5%] hover:scale-[102%]'
+        'group h-[320px] w-[288px] flex-shrink-0 cursor-pointer px-2 transition-all duration-500 hover:translate-y-[-5%] hover:scale-[102%] sm:h-[400px] sm:w-[328px]'
       }
     >
       <div className="flex h-full w-full flex-col items-start justify-start gap-2 rounded-[4px] bg-gradient-to-tl from-zinc-50 via-zinc-100 to-zinc-50 p-2 shadow-sm shadow-zinc-800/20">

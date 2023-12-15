@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import checklist from '../../../../public/icons/webps/checklist.webp';
+import checklist from '../../../../public/icons/svgs/checklist.svg';
 
 export const FirstStepText = () => {
   return (
@@ -10,7 +10,7 @@ export const FirstStepText = () => {
       <Image
         src={checklist}
         alt={'checklist-icon-svg'}
-        placeholder={'blur'}
+        // placeholder={'blur'}
         loading={'eager'}
         className="h-[20px] w-[20px] flex-shrink-0 basePhone:h-[24px] basePhone:w-[24px]"
       />

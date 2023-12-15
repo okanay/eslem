@@ -11,7 +11,7 @@ type TProps = {
 
 export default function Home(props: TProps) {
   return (
-    <main>
+    <main className={'bg-primary-200'}>
       <Hero />
       <WhatCanDo />
       <InstagramBlog />

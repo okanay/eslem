@@ -1,13 +1,8 @@
 import { SliderWrapper } from '@/components/index/instagram-blog/slider-wraper';
-import { TextDelayAnimation } from '@/components/ui/text-delay-animation';
 
 export const InstagramBlog = () => {
   return (
-    <section
-      className={
-        'h-full overflow-x-hidden bg-gradient-to-tr from-zinc-50 to-primary-50 pb-20'
-      }
-    >
+    <section className="h-full bg-gradient-to-tr from-zinc-100 to-primary-100 pb-20">
       <div className="flex h-full w-full flex-col items-center justify-start gap-[4px] px-6 pb-[76px] text-center text-zinc-700">
         <h2 className="text-sm font-light smPhone:text-base md:text-base">
           Sosyal Medya.
@@ -16,7 +11,10 @@ export const InstagramBlog = () => {
           Blog Paylaşımları.
         </h1>
       </div>
-      <div data-name={'slider'} className={'mx-auto h-full max-w-[3000px]'}>
+      <div
+        data-name={'slider'}
+        className="relative mx-auto h-full max-w-[3000px] overflow-x-hidden"
+      >
         <div
           data-name={'slider-inner'}
           className={'flex w-fit max-w-full flex-row'}

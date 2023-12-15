@@ -1,25 +1,6 @@
-'use client';
-
-import { m, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
-
 export const Avatars = () => {
-  const ref = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start end', 'end end'],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ['-50%', '0%']);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]);
-
   return (
-    <m.div
-      ref={ref}
-      style={{ y, opacity }}
-      className="relative z-20 hidden h-[10vh] w-full border border-zinc-100 bg-zinc-50 sm:block"
-    >
+    <div className="relative z-20 hidden h-[10vh] w-full border border-zinc-100 bg-zinc-50 sm:block">
       <div className={'mx-auto h-full max-w-7xl px-4'}>
         <div className="flex h-full w-full flex-col items-center justify-center sm:items-start">
           <div className="flex flex-row items-center justify-start gap-4 sm:gap-8">
@@ -35,6 +16,6 @@ export const Avatars = () => {
           </div>
         </div>
       </div>
-    </m.div>
+    </div>
   );
 };

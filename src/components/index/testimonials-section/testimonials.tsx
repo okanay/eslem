@@ -37,7 +37,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[300px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
+              <p className="max-w-[300px] text-sm leading-6 tracking-wide lgPhone:max-w-[440px] sm:text-lg md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae
@@ -105,7 +105,7 @@ export const Testimonials = () => {
               </h1>
             </div>
             <div data-name={'context'}>
-              <p className="max-w-[300px] text-lg leading-6 tracking-wide lgPhone:max-w-[440px] md:max-w-[520px]">
+              <p className="max-w-[300px] text-sm leading-6 tracking-wide lgPhone:max-w-[440px] sm:text-lg md:max-w-[520px]">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                 assumenda consequuntur cum dolores eos error, fugit natus nisi
                 nostrum, officiis placeat qui quibusdam quidem recusandae

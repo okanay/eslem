@@ -1,5 +1,5 @@
-import registerIcon from '../../../../public/icons/webps/register.webp';
-import panelIcon from '../../../../public/icons/webps/panel.webp';
+import registerIcon from '../../../../public/icons/svgs/register.svg';
+import panelIcon from '../../../../public/icons/svgs/panel.svg';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -23,7 +23,7 @@ export const NavigationBtn: TProps = ({ name, url, type }) => {
       <Image
         src={src}
         alt={alt}
-        placeholder={'blur'}
+        // placeholder={'blur'}
         loading={'eager'}
         className={'h-[22px] w-[22px] text-zinc-800 lg:h-[24px] lg:w-[24px]'}
       />

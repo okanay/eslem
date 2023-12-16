@@ -2,7 +2,7 @@ import { SliderWrapper } from '@/components/index/instagram-blog/slider-wraper';
 
 export const InstagramBlog = () => {
   return (
-    <section className="h-full bg-gradient-to-tr from-zinc-100 to-primary-100 pb-20">
+    <section className="h-full bg-gradient-to-tr from-zinc-200 to-primary-100 pb-20">
       <div className="flex h-full w-full flex-col items-center justify-start gap-[4px] px-6 pb-[76px] text-center text-zinc-700">
         <h2 className="text-sm font-light smPhone:text-base md:text-base">
           Sosyal Medya.

@@ -26,7 +26,7 @@ export const Testimonials = () => {
               className={'-my-4 h-[40px] w-[40px] md:-my-8'}
             />
             <div data-name={'heading'}>
-              <h1 className="text-2xl font-bold italic leading-[36px] -tracking-wide smPhone:text-3xl md:max-w-[360px] md:text-4xl md:leading-[44px]">
+              <h1 className="max-w-[320px] text-2xl font-bold italic leading-[36px] -tracking-wide smPhone:text-3xl md:max-w-[360px] md:text-4xl md:leading-[44px]">
                 <span>&ldquo;Bedenin bu </span>
                 <InViewScrollAnimation>
                   <span className={'px-0.5 text-primary-600 underline'}>
@@ -94,7 +94,7 @@ export const Testimonials = () => {
               className={'-my-4 h-[40px] w-[40px] md:-my-8'}
             />
             <div data-name={'heading'}>
-              <h1 className="text-2xl font-bold italic leading-[36px] -tracking-wide smPhone:text-3xl md:max-w-[360px] md:text-4xl md:leading-[44px]">
+              <h1 className="max-w-[320px] text-2xl font-bold italic leading-[36px] -tracking-wide smPhone:text-3xl md:max-w-[360px] md:text-4xl md:leading-[44px]">
                 <span>&ldquo;Bilimsel ve </span>
                 <InViewScrollAnimation>
                   <span className={'px-0.5 text-primary-600 underline'}>

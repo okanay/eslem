@@ -5,7 +5,7 @@ import { SectionScrollEffect } from '@/components/ui/section-scroll-effect';
 export const WhatCanDo = () => {
   return (
     <SectionScrollEffect yValueEnd={'-200px'}>
-      <section className="h-full w-full bg-gradient-to-br from-zinc-100 to-primary-100 py-20">
+      <section className="h-full w-full bg-gradient-to-br from-zinc-200 to-primary-100 py-20">
         <div className="mx-auto flex h-full w-full max-w-7xl flex-col gap-16">
           <div className="flex h-full w-full flex-col items-center justify-start gap-[4px] px-6 text-center text-zinc-700">
             <h2 className="text-sm font-light smPhone:text-base md:text-base">

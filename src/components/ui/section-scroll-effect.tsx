@@ -21,7 +21,7 @@ export const SectionScrollEffect: TProps = ({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start end', 'center end'],
+    offset: ['start end', 'end end'],
   });
 
   const y = useTransform(
